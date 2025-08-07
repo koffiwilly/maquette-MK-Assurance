@@ -382,8 +382,10 @@ color: black;
 
 #coutainer_footer {
   color: white;
-  justify-content: space-between;
-  padding: 30px 40px;
+
+}
+#coutainer_footer:visited {
+  color: white;
 }
 
 /* Logo à gauche avec marge */
@@ -394,6 +396,8 @@ color: black;
 }
 
 #coutainer_footer {
+    padding-top:50px;
+  padding-bottom:50px;
   margin-top: 200px;
   background-color: #5046e5;
 }
@@ -407,39 +411,71 @@ footer img {
   max-height: 70px; /* ajoute une limite si tu veux */
 }
 
-/* Conteneur droit des colonnes */
-#colonnes_droite {
-  display: flex;
-  gap: 50px;
-  align-items: flex-start;
-  margin-top: 0; /* aligné en haut */
-}
 
 /* Colonnes individuelles */
 #colonne_1 ul,
-#colonne_2 ul {
+#colonne_2 ul,
+#colonne_3 ul {
   list-style: none;
-
   margin: 50px;
   color: #f7f7f9;
 }
-
+#colonne_1 a,
+#colonne_3 a,
+#colonne_2 a {
+  list-style: none;
+  color: #f7f7f9;
+}
 #colonne_1 li,
+#colonne_3 li,
 #colonne_2 li {
-  margin-bottom: 10px;
   cursor: pointer;
 }
 
 #colonne_3 p {
-  margin-bottom: 10px;
   font-weight: bold;
   color: #fafafc;
 }
 
 #colonne_3 img {
   width: 30px;
-  margin-right: 10px;
   cursor: pointer;
 }
+
+
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "logo menu_footer"; 
+}
+.menu_footer {
+
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1.3fr 0.7fr; 
+  gap: 0px 0px; 
+  grid-area: menu_footer; 
+
+}
+.submenu_footer {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "left_menu menu_droit"; 
+  grid-area: 1 / 1 / 2 / 2; 
+}
+.left_menu { grid-area: left_menu; }
+.menu_droit { grid-area: menu_droit; }
+.socials_footer { grid-area: 1 / 2 / 2 / 3; }
+.logo { grid-area: logo; }
+footer  .logo {
+  margin-left: 50px;
+}
+
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
