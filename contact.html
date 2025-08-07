@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="styles.css" />
+  <body>
+    <header>
+      <header>
+        <div>
+          <nav>
+            <ul>
+              <img src="LOGO.png" alt="logo_header" />
+              <li>
+                <a href="Assurances professionnels"
+                  >Assurances professionnels</a
+                >
+              </li>
+              <li>
+                <a href="Assurance particulières">Assurance particulières</a>
+              </li>
+              <li id="btn_contact"><a href="Contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </header>
+
+    <main id="background_img_contact">
+      <h1 class="bouton_contact">Contactez MK Assurance</h1>
+    </main>
+    <section id="formualaire_contact">
+      <h2>Posez nous vos questions</h2>
+      <h3>
+        N'hésitez pas à nous adresser vos demandes à l'aide de ce formulaire de
+        contact. Nous vous répondrons dans les plus brefs délais.
+      </h3>
+      <form action="/traitement.php" method="post">
+    
+        <div>
+          <label for="nom">Nom :</label><br />
+          <input type="text" id="nom" name="nom" required /><br /><br />
+        </div>
+        <label for="prenom">Prénom :</label><br />
+        <input type="text" id="prenom" name="prenom" required /><br /><br />
+ 
+        <label for="entreprise">Entreprise :</label><br />
+        <input type="text" id="entreprise" name="entreprise" /><br /><br />
+
+        <label for="email">Email :</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="telephone">Téléphone :</label><br />
+        <input
+          type="tel"
+          id="telephone"
+          name="telephone"
+          required
+        /><br /><br />
+
+        <label for="assurance">Type d'assurance :</label><br />
+        <select id="assurance" name="assurance" required>
+          <option value="">-- Sélectionnez une assurance --</option>
+          <option value="auto">Assurance Auto</option>
+          <option value="sante">Assurance Santé</option>
+          <option value="habitation">Assurance Habitation</option>
+          <option value="emprunteur">Assurance Emprunteur</option>
+          <option value="vie">Assurance Vie</option>
+          <option value="professionnelle">
+            Responsabilité Professionnelle
+          </option></select
+        ><br /><br />
+
+        <label for="message">Votre message :</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea
+        ><br /><br />
+
+        <input type="submit" value="Envoyer" />
+      </form>
+    </section>
+
+    <footer>
+      <section id="coutainer_footer">
+        <img src="logo blanc.png" alt="" />
+        <p>
+          Votre partenaire de confiance pour une protection complète au
+          quotidien
+        </p>
+        <div id="colonne_1">
+          <ul>
+            <li>Assurance</li>
+            <li>Particulier</li>
+            <li>Professionnel</li>
+            <li>santé</li>
+          </ul>
+        </div>
+        <div id="colonne_2">
+          <ul>
+            <li>FAQ</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div id="colonne_3">
+          <p>Suivez nous</p>
+          <img src="Instagram.png" alt="" /> <a href=""></a>
+          <img src="LinkedIn.png" alt="" /> <a href=""></a>
+          <img src="Facebook.png" alt="" />
+        </div>
+
+        <p>@2024 MK assurance tous droits réservés</p>
+      </section>
+    </footer>
+  </body>
+</html>
