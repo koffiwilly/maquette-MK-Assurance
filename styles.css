@@ -70,9 +70,81 @@ nav li a:hover {
 
 /*page accueil*/
 
-#section_1_accueil{
+#section_1_accueil {
+  padding: 200px;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-bottom: 300px;
+  margin-bottom: 250px;
+}
+
+#video-back_ground{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+#section_1_accueil img {
+  position: relative;
+  z-index: 1;
+  width: 320px; /* logo encore plus grand */
+  height: auto;
+  margin-bottom: 30px; /* plus d'espace sous le logo */
+}
+
+#section_1_accueil h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0 10px;
+  color: white;
+  font-size: 2em; /* texte plus grand */
+  margin-bottom: 20px; /* espace entre h1 et h2 */
+}
+
+#section_1_accueil h2 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0 10px;
+  color: white;
+  font-size: 1.5em; /* h2 plus grand */
+}
+
+#section_2_accueil{
+  justify-content: center;
+  display: flex; 
   
 }
+
+
+#section_2_accueil div {
+ margin: 30px;
+ border-color: #333;
+}
+
+.btn_rdv_accueil{
+  display: inline-block;
+  background-color: #1607FE; 
+  color: white;    
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+
+}
+
+
+
+
+
+
 
 
 
