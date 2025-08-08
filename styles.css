@@ -131,14 +131,19 @@ nav li a:hover {
 }
 
 .btn_rdv_accueil{
+  margin: 60px;
   display: inline-block;
   background-color: #1607FE; 
   color: white;    
   padding: 12px 24px;
   border-radius: 6px;
   text-decoration: none;
+  
 
 }
+
+
+
 
 
 
