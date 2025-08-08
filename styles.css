@@ -94,9 +94,9 @@ nav li a:hover {
 #section_1_accueil img {
   position: relative;
   z-index: 1;
-  width: 320px; /* logo encore plus grand */
+  width: 450px; 
   height: auto;
-  margin-bottom: 30px; /* plus d'espace sous le logo */
+  margin-bottom: 30px; 
 }
 
 #section_1_accueil h1 {
@@ -105,7 +105,7 @@ nav li a:hover {
   margin: 0;
   padding: 0 10px;
   color: white;
-  font-size: 2em; /* texte plus grand */
+  font-size: 2em; 
   margin-bottom: 20px; /* espace entre h1 et h2 */
 }
 
@@ -115,7 +115,7 @@ nav li a:hover {
   margin: 0;
   padding: 0 10px;
   color: white;
-  font-size: 1.5em; /* h2 plus grand */
+  font-size: 1.5em; 
 }
 
 #section_2_accueil{
@@ -138,12 +138,17 @@ nav li a:hover {
   padding: 12px 24px;
   border-radius: 6px;
   text-decoration: none;
-  
-
+}
+#section_3_accueil {
+  margin: 50px;
+}
+#section_3_accueil h2{
+  margin: 40px;
 }
 
-
-
+#section_3_accueil p {
+  margin-bottom: 80px;
+}
 
 
 
