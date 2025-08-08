@@ -67,6 +67,23 @@ nav li a:hover {
   padding: 8px 20px;
 }
 
+
+/*page accueil*/
+
+#section_1_accueil{
+  
+}
+
+
+
+
+
+
+
+
+
+/* page pro*/
+
 #serrage_main {
   display: flex;
   align-items: flex-start;
@@ -233,7 +250,15 @@ h2 {
 
 
 
+
+
+
+
+
+
 /* page particulier*/
+
+
 #section_1_part {
   display: flex;
   align-items: flex-start;
@@ -262,10 +287,6 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-size: 2.2rem;
 }
-
-
-
-
 
 #card_section_2_part{
   margin-top: 50px;
