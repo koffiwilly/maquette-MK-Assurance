@@ -1,0 +1,91 @@
+version: '3.8'
+
+services:
+  # Service PHP avec Apache
+  web:
+    build: .
+    container_name: php_apache
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html
+      - ./apache-config:/etc/apache2/sites-available
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+    depends_on:
+      - mysql
+      - postgres
+    networks:
+      - app-network
+
+  # Service MySQL
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: myapp
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - app-network
+
+  # Service PostgreSQL (alternative à MySQL)
+  postgres:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_DB: myapp
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+  # Service phpMyAdmin pour MySQL
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: user
+      PMA_PASSWORD: password
+    depends_on:
+      - mysql
+    networks:
+      - app-network
+
+  # Service pgAdmin pour PostgreSQL
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    depends_on:
+      - postgres
+    networks:
+      - app-network
+
+volumes:
+  mysql_data:
+  postgres_data:
+
+networks:
+  app-network:
+    driver: bridge

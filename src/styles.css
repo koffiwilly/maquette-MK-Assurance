@@ -243,16 +243,16 @@ h2 {
 }
 
 #TNS {
-  background-image: url("sante\ tns.png"); /* remplace par le vrai nom de ton image */
+  background-image: url("./medias/sante\ tns.png");
   background-size: cover;
 }
 
 #PREVOYANCE {
-  background-image: url("prevoyance.png");
+  background-image: url("./medias/prevoyance.png");
 }
 
 #COLLECTIVE {
-  background-image: url("collective.png");
+  background-image: url("./medias/collective.png");
 }
 
 #assu_entreprise {
@@ -279,19 +279,19 @@ h2 {
 
 /* Ajoute ici tes images de fond */
 .VL {
-  background-image: url("vl.png");
+  background-image: url("./medias/vl.png");
 }
 
 .rcp {
-  background-image: url("rcp.png");
+  background-image: url("./medias/rcp.png");
 }
 
 .DECENNALE {
-  background-image: url("decennale.png");
+  background-image: url("./medias/decennale.png");
 }
 
 .mrp {
-  background-image: url("multi\ risque.png");
+  background-image: url("./medias/multi\ risque.png");
 }
 .coutainer_bleu_pro{
   color: white;
@@ -463,7 +463,7 @@ color: black;
 #background_img_contact{
   margin-top: 50px;
  margin-bottom: 70px;
- background-image: url("back_ground_contact.png");
+ background-image: url("./medias/back_ground_contact.png");
  object-fit: cover;
 }
 
