@@ -1,3 +1,5 @@
+/* Votre CSS existant avec les modifications pour le menu burger */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,18 +16,26 @@ body {
 }
 
 /* HEADER & NAV - plein largeur */
-header { 
+header {
   padding: 15px 30px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 nav {
   width: 100%;
-  max-width: 1200px; /* limite largeur si besoin */
+  max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+}
+
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -59,7 +69,7 @@ nav li a:hover {
   color: #47509e;
 }
 
-/* Bouton Contact page contact*/
+/* Bouton Contact */
 #btn_contact_nav a {
   color: white !important;
   background-color: #1607fe;
@@ -67,9 +77,160 @@ nav li a:hover {
   padding: 8px 20px;
 }
 
+/* Menu Burger Button */
+#burgerMenuBtn {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 8px;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 1001;
+}
+
+.burger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #47509e;
+  margin: 3px 0;
+  transition: 0.3s ease;
+  border-radius: 3px;
+}
+
+/* Animation du burger quand actif */
+#burgerMenuBtn.active .burger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#burgerMenuBtn.active .burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+#burgerMenuBtn.active .burger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Overlay pour fermer le menu en cliquant en dehors */
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.menu-overlay.active {
+  display: block;
+}
+
+/* Styles responsive */
+@media screen and (max-width: 768px) {
+  nav > div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Afficher le bouton burger sur mobile */
+  #burgerMenuBtn {
+    display: flex;
+  }
+
+  /* Cacher le texte du burger et afficher les lignes */
+  #burgerMenuBtn {
+    font-size: 0; /* Cache le texte "Menu BURGER" */
+  }
+
+  /* Menu principal en mode mobile */
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    flex-direction: column;
+    background-color: white;
+    text-align: left;
+    transition: 0.3s ease;
+    gap: 0;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 80px 0 20px 0;
+    justify-content: flex-start;
+  }
+
+  nav ul.active {
+    right: 0;
+  }
+
+  /* Logo en mode mobile */
+  nav ul img {
+    max-height: 40px;
+    margin: 20px 30px;
+    align-self: flex-start;
+  }
+
+  /* Liens en mode mobile */
+  nav ul li {
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 15px 30px;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  /* Bouton contact en mode mobile */
+  #btn_contact_nav a {
+    background-color: #1607fe;
+    color: white !important;
+    margin: 15px 30px;
+    border-radius: 12px;
+    width: calc(100% - 60px);
+    text-align: center;
+  }
+
+  /* Réduire les gaps du header */
+  header {
+    padding: 15px 20px;
+  }
+
+  /* Logo principal (hors menu) */
+  .logo-main {
+    max-height: 40px;
+  }
+}
+
+/* Styles pour écrans encore plus petits */
+@media screen and (max-width: 480px) {
+  nav ul {
+    width: 280px;
+  }
+
+  header {
+    padding: 10px 15px;
+  }
+
+  nav ul li a {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Le reste de votre CSS existant reste inchangé */
 
 /*page accueil*/
-
 #section_1_accueil {
   padding: 200px;
   color: white;
@@ -90,13 +251,12 @@ nav li a:hover {
   z-index: -1;
 }
 
-
 #section_1_accueil img {
   position: relative;
   z-index: 1;
-  width: 450px; 
+  width: 450px;
   height: auto;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 #section_1_accueil h1 {
@@ -105,8 +265,8 @@ nav li a:hover {
   margin: 0;
   padding: 0 10px;
   color: white;
-  font-size: 2em; 
-  margin-bottom: 20px; /* espace entre h1 et h2 */
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 #section_1_accueil h2 {
@@ -115,33 +275,33 @@ nav li a:hover {
   margin: 0;
   padding: 0 10px;
   color: white;
-  font-size: 1.5em; 
+  font-size: 1.5em;
 }
 
 #section_2_accueil{
   justify-content: center;
-  display: flex; 
-  
+  display: flex;
 }
 
-
 #section_2_accueil div {
- margin: 30px;
- border-color: #333;
+  margin: 30px;
+  border-color: #333;
 }
 
 .btn_rdv_accueil{
   margin: 60px;
   display: inline-block;
-  background-color: #1607FE; 
-  color: white;    
+  background-color: #1607FE;
+  color: white;
   padding: 12px 24px;
   border-radius: 6px;
   text-decoration: none;
 }
+
 #section_3_accueil {
   margin: 50px;
 }
+
 #section_3_accueil h2{
   margin: 40px;
 }
@@ -150,22 +310,7 @@ nav li a:hover {
   margin-bottom: 80px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* page pro*/
-
 #serrage_main {
   display: flex;
   align-items: flex-start;
@@ -190,36 +335,35 @@ nav li a:hover {
   color: #333;
 }
 
-/* Image et flou derrière */
 #serrage_main img {
   flex: 1 1 500px;
   max-width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 15px -20px 40px rgba(80, 70, 229, 0.16),
-    -15px 30px 60px rgba(0, 0, 0, 0.35);
+  -15px 30px 60px rgba(0, 0, 0, 0.35);
   object-fit: contain;
 }
+
 main {
   color: black;
   text-align: center;
   height: color #47509e;
 }
+
 h2 {
   color: #47509e;
 }
+
 .layer_blur {
   margin-top: 50px;
-  background-color: rgba(80, 70, 229, 0.16); /* #5046E5 avec 16% d’opacité */
+  background-color: rgba(80, 70, 229, 0.16);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(300px); /* pour Safari */
-  border-radius: 12px; /* arrondi optionnel */
-  padding: 20px; /* espace intérieur optionnel */
+  -webkit-backdrop-filter: blur(300px);
+  border-radius: 12px;
+  padding: 20px;
 }
 
-#assu_pro {
-  display: flex;
-}
 #assu_pro {
   display: flex;
   gap: 20px;
@@ -277,7 +421,6 @@ h2 {
   text-align: center;
 }
 
-/* Ajoute ici tes images de fond */
 .VL {
   background-image: url("./medias/vl.png");
 }
@@ -293,18 +436,21 @@ h2 {
 .mrp {
   background-image: url("./medias/multi\ risque.png");
 }
+
 .coutainer_bleu_pro{
   color: white;
   margin-top: 80px;
   text-align: left;
   background-color: #5046e5;
   padding: 20px;
-  div {
-    display: flex;
+}
+
+.coutainer_bleu_pro div {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  }
 }
+
 .contact_btn {
   color: black;
   text-align: center;
@@ -313,6 +459,7 @@ h2 {
   padding: 10px;
   border-radius: 10px;
 }
+
 .section_quatre h2 {
   margin-top: 60px;
   margin-bottom: 50px;
@@ -321,6 +468,7 @@ h2 {
 .section_quatre h3 {
   margin-bottom: 24px;
 }
+
 .btn_devis {
   display: inline-block;
   margin-top: 50px;
@@ -330,17 +478,7 @@ h2 {
   border-radius: 5px;
 }
 
-
-
-
-
-
-
-
-
 /* page particulier*/
-
-
 #section_1_part {
   display: flex;
   align-items: flex-start;
@@ -351,13 +489,14 @@ h2 {
   max-width: 1200px;
   margin: 0 auto 60px;
 }
+
 #section_1_part img {
   flex: 1 1 500px;
   max-width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 15px -20px 40px rgba(80, 70, 229, 0.16),
-    -15px 30px 60px rgba(0, 0, 0, 0.35);
+  -15px 30px 60px rgba(0, 0, 0, 0.35);
   object-fit: contain;
 }
 
@@ -375,17 +514,18 @@ h2 {
   margin-bottom: 50px;
   display: flex;
 }
-#card_section_2_part div { 
+
+#card_section_2_part div {
   margin-top: 40px;
   border: solid;
   border-radius: 15px;
   margin: 10px;
   border-color: #5046E5;
 }
+
 #card_section_2 img {
   margin: 10px;
 }
-
 
 #troisieme_section_part h2{
   margin-bottom: 40px;
@@ -394,7 +534,6 @@ h2 {
 #femme_medecin_part {
   margin-top: 100px;
   display: flex;
-  
   justify-content: space-between;
   gap: 40px;
   padding: 30px 40px;
@@ -402,7 +541,6 @@ h2 {
   max-width: 1200px;
   margin: 0 auto 60px;
 }
-
 
 #femme_medecin_part  h2 {
   margin-bottom: 20px;
@@ -412,7 +550,6 @@ h2 {
   color: #47509e;
   font-family: "Roboto", sans-serif;
   font-size: 2.2rem;
-
 }
 
 #femme_medecin_part img {
@@ -421,7 +558,7 @@ h2 {
   height: auto;
   border-radius: 12px;
   box-shadow: 15px -20px 40px rgba(80, 70, 229, 0.16),
-    -15px 30px 60px rgba(0, 0, 0, 0.35);
+  -15px 30px 60px rgba(0, 0, 0, 0.35);
   object-fit: contain;
 }
 
@@ -429,19 +566,15 @@ h2 {
   color: #5046E5;
 }
 
-
-
-
 /* page contact*/
-
 #formualaire_contact{
   text-align: center;
 }
 
-
 #allignement_contact {
   display: flex;
 }
+
 .bouton_contact {
   margin: 0px;
   margin-top: 150px;
@@ -451,47 +584,28 @@ h2 {
   padding: 30px;
 }
 
-
-
 #formualaire_contact h3{
-margin-top: 40px;
-margin-bottom: 50px;
-color: black;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: black;
 }
-
 
 #background_img_contact{
   margin-top: 50px;
- margin-bottom: 70px;
- background-image: url("./medias/back_ground_contact.png");
- object-fit: cover;
+  margin-bottom: 70px;
+  background-image: url("./medias/back_ground_contact.png");
+  object-fit: cover;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Footer */
 #coutainer_footer {
   color: white;
-
 }
+
 #coutainer_footer:visited {
   color: white;
 }
 
-/* Logo à gauche avec marge */
 #coutainer_footer > img {
   margin-top: 30px;
   max-height: 70px;
@@ -499,23 +613,17 @@ color: black;
 }
 
 #coutainer_footer {
-    padding-top:50px;
-  padding-bottom:50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin-top: 200px;
   background-color: #5046e5;
 }
 
 footer img {
   margin-top: 30px;
+  max-height: 70px;
 }
 
-footer img {
-  margin-top: 30px; /* comme tu l'avais */
-  max-height: 70px; /* ajoute une limite si tu veux */
-}
-
-
-/* Colonnes individuelles */
 #colonne_1 ul,
 #colonne_2 ul,
 #colonne_3 ul {
@@ -523,12 +631,14 @@ footer img {
   margin: 50px;
   color: #f7f7f9;
 }
+
 #colonne_1 a,
 #colonne_3 a,
 #colonne_2 a {
   list-style: none;
   color: #f7f7f9;
 }
+
 #colonne_1 li,
 #colonne_3 li,
 #colonne_2 li {
@@ -545,40 +655,40 @@ footer img {
   cursor: pointer;
 }
 
-
 .container {
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 0px 0px; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
   grid-template-areas: 
-    "logo menu_footer"; 
+    "logo menu_footer";
 }
+
 .menu_footer {
-
-  display: grid; 
-  grid-auto-rows: 1fr; 
-  grid-template-columns: 1.3fr 0.7fr; 
-  gap: 0px 0px; 
-  grid-area: menu_footer; 
-
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 0px 0px;
+  grid-area: menu_footer;
 }
+
 .submenu_footer {
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 0px 0px; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
   grid-template-areas: 
-    "left_menu menu_droit"; 
-  grid-area: 1 / 1 / 2 / 2; 
+    "left_menu menu_droit";
+  grid-area: 1 / 1 / 2 / 2;
 }
+
 .left_menu { grid-area: left_menu; }
 .menu_droit { grid-area: menu_droit; }
 .socials_footer { grid-area: 1 / 2 / 2 / 3; }
 .logo { grid-area: logo; }
-footer  .logo {
+
+footer .logo {
   margin-left: 50px;
 }
-
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
