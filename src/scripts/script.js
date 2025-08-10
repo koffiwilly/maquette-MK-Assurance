@@ -124,25 +124,3 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('🍔 Menu burger initialisé avec succès !');
 
 });
-
-// Version simplifiée pour votre structure actuelle
-// let button = document.getElementById("burgerMenuBtn");
-//
-// button.addEventListener("click", (event) => {
-//     const mainMenu = document.getElementById("mainMenu");
-//     const menuOverlay = document.getElementById("menuOverlay");
-//
-//     // Basculer les classes
-//     button.classList.toggle('active');
-//     mainMenu.classList.toggle('active');
-//     menuOverlay.classList.toggle('active');
-//
-//     // Empêcher le scroll du body quand le menu est ouvert
-//     if (button.classList.contains('active')) {
-//         document.body.style.overflow = 'hidden';
-//     } else {
-//         document.body.style.overflow = '';
-//     }
-//
-//     event.preventDefault();
-// });
