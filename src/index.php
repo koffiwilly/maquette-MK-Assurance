@@ -18,7 +18,12 @@ $pageName = $_GET["page"] ?? null;
 if(is_null($pageName)) {
     $pageName = "Accueil";
 }
+if($pageName =='contact'){
+    include("./includes/contact.php");
+} else {
 include("./includes/$pageName.html");
+
+}
 ?>
 
 
