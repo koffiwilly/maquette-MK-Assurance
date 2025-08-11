@@ -1,3 +1,6 @@
+<?php
+$classText = $_GET["page"] === "Accueil" ? "whiteColor" : "blackColor";
+?>
 <header>
     <nav>
         <div>
@@ -7,16 +10,16 @@
             </a>
 
             <!-- Menu principal -->
-            <ul id="mainMenu">
+            <ul id="mainMenu" class="<?= $classText ?>">
                 <!-- Logo dans le menu mobile -->
                 <li>
-                    <a href="?page=pro">Assurances professionnels</a>
+                    <a href="?page=pro" class="<?= $classText ?>">Assurances professionnels</a>
                 </li>
                 <li>
-                    <a href="?page=particulier">Assurance particulières</a>
+                    <a href="?page=particulier" class="<?= $classText ?>">Assurance particulières</a>
                 </li>
                 <li id="btn_contact_nav">
-                    <a href="?page=contact">Contact</a>
+                    <a href="?page=contact" class="<?= $classText ?>">Contact</a>
                 </li>
             </ul>
 

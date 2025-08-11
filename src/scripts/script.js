@@ -124,3 +124,137 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('🍔 Menu burger initialisé avec succès !');
 
 });
+//
+//
+//CAROUSEL
+//
+//
+
+// JavaScript à ajouter dans votre script.js existant - CAROUSEL PARTENAIRES
+
+// Configuration des logos partenaires (remplacez par vos vrais logos)
+const partnerLogos = [
+    './medias/partner/1.png',
+    './medias/partner/2.png',
+    './medias/partner/3.png',
+    './medias/partner/4.png',
+    './medias/partner/5.png',
+    './medias/partner/6.png',
+    './medias/partner/7.png',
+    './medias/partner/8.png',
+    './medias/partner/9.png'
+];
+
+// Ou avec noms pour fallback
+const partnersData = [
+    { name: 'Partenaire 1', logo: './medias/partner/1.png' },
+    { name: 'Partenaire 2', logo: './medias/partner/2.png' },
+    { name: 'Partenaire 3', logo: './medias/partner/3.png' },
+    { name: 'Partenaire 4', logo: './medias/partner/4.png' },
+    { name: 'Partenaire 5', logo: './medias/partner/5.png' },
+    { name: 'Partenaire 6', logo: './medias/partner/6.png' },
+    { name: 'Partenaire 6', logo: './medias/partner/7.png' },
+    { name: 'Partenaire 6', logo: './medias/partner/8.png' },
+    { name: 'Partenaire 6', logo: './medias/partner/9.png' }
+];
+
+// Fonction pour initialiser le carousel partenaires
+function initPartnersCarousel() {
+    const carousel = document.getElementById('carousel');
+
+    if (!carousel) {
+        console.error('Div #carousel non trouvée');
+        return;
+    }
+
+    // Créer le HTML du carousel
+    let carouselHTML = '<div class="carousel-track">';
+
+    // Version simple avec juste les logos
+    partnerLogos.forEach((logoSrc, index) => {
+        carouselHTML += `
+            <div class="partner-slide">
+                <img src="${logoSrc}" alt="Partenaire ${index + 1}" class="partner-logo" loading="lazy">
+            </div>
+        `;
+    });
+
+    // Dupliquer pour l'effet infini
+    partnerLogos.forEach((logoSrc, index) => {
+        carouselHTML += `
+            <div class="partner-slide">
+                <img src="${logoSrc}" alt="Partenaire ${index + 1}" class="partner-logo" loading="lazy">
+            </div>
+        `;
+    });
+
+    carouselHTML += '</div>';
+
+    // Injecter le HTML dans la div
+    carousel.innerHTML = carouselHTML;
+
+    // Gestion des erreurs d'images (affiche le nom si logo ne charge pas)
+    const logos = carousel.querySelectorAll('.partner-logo');
+    logos.forEach((logo, index) => {
+        logo.addEventListener('error', function() {
+            this.style.display = 'none';
+            const partnerName = document.createElement('div');
+            partnerName.className = 'partner-name';
+            partnerName.textContent = `Partenaire ${(index % partnerLogos.length) + 1}`;
+            this.parentElement.appendChild(partnerName);
+        });
+    });
+
+    console.log('🤝 Carousel partenaires initialisé avec', partnerLogos.length, 'logos');
+}
+
+// Version avec données complètes (nom + logo)
+function initPartnersCarouselWithNames() {
+    const carousel = document.getElementById('carousel');
+
+    if (!carousel) return;
+
+    let carouselHTML = '<div class="carousel-track">';
+
+    // Ajouter les partenaires originaux
+    partnersData.forEach(partner => {
+        carouselHTML += `
+            <div class="partner-slide">
+                <img src="${partner.logo}" alt="${partner.name}" class="partner-logo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="partner-name" style="display:none;">${partner.name}</div>
+            </div>
+        `;
+    });
+
+    // Dupliquer pour l'effet infini
+    partnersData.forEach(partner => {
+        carouselHTML += `
+            <div class="partner-slide">
+                <img src="${partner.logo}" alt="${partner.name}" class="partner-logo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="partner-name" style="display:none;">${partner.name}</div>
+            </div>
+        `;
+    });
+
+    carouselHTML += '</div>';
+    carousel.innerHTML = carouselHTML;
+}
+
+// Initialiser quand le DOM est chargé
+document.addEventListener('DOMContentLoaded', function() {
+    // Choisissez la version que vous préférez :
+    initPartnersCarousel(); // Version simple
+    // OU
+    // initPartnersCarouselWithNames(); // Version avec fallback de noms
+});
+
+// Fonction pour mettre à jour les logos dynamiquement
+function updatePartnerLogos(newLogos) {
+    partnerLogos.length = 0;
+    partnerLogos.push(...newLogos);
+    initPartnersCarousel();
+}
+
+// Exemple d'utilisation :
+// updatePartnerLogos(['./medias/new-logo1.png', './medias/new-logo2.png']);
+
