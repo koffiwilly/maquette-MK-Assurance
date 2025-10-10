@@ -144,45 +144,21 @@ h2 {
 }
 
 #TNS {
- 
--webkit-box-shadow: 10px 15px 5px 3px #7f7f7f;
--moz-box-shadow: 10px 15px 5px 3px #7f7f7f;
-filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=10, OffY=15, Color='#7f7f7f', Positive='true');
-zoom:1;
-box-shadow: 10px 15px 5px 3px #7f7f7f;
--moz-border-radius:0px;
--webkit-border-radius:0px;
-border-radius:0px;
-
-/* pour IE9 et + ce hack ci-dessous peut être fait avec les commentaires conditionnels d'IE :
-[if gte IE 9]*/
-@media only screen{#selecteur{filter: none;}} /*Ie9+*/
-  background-image: url("sante\ tns.png"); /* remplace par le vrai nom de ton image */
+    box-shadow: 10px 15px 5px 3px #7f7f7f;
+  background-image: url("sante\ tns.png"); 
   background-size: cover;
 }
 
 #PREVOYANCE {
-  -webkit-box-shadow: 10px 15px 5px 3px #7f7f7f;
--moz-box-shadow: 10px 15px 5px 3px #7f7f7f;
-filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=10, OffY=15, Color='#7f7f7f', Positive='true');
-zoom:1;
-box-shadow: 10px 15px 5px 3px #7f7f7f;
--moz-border-radius:0px;
--webkit-border-radius:0px;
-border-radius:0px;
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
   background-image: url("prevoyance.png");
+   background-size: cover;
 }
 
 #COLLECTIVE {
-  -webkit-box-shadow: 10px 15px 5px 3px #7f7f7f;
--moz-box-shadow: 10px 15px 5px 3px #7f7f7f;
-filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=10, OffY=15, Color='#7f7f7f', Positive='true');
-zoom:1;
 box-shadow: 10px 15px 5px 3px #7f7f7f;
--moz-border-radius:0px;
--webkit-border-radius:0px;
-border-radius:0px;
-  background-image: url("collective.png");
+background-image: url("collective.png");
+   background-size: cover;
 }
 
 #assu_entreprise {
@@ -209,7 +185,6 @@ border-radius:0px;
 
 /* Ajoute ici tes images de fond */
 .VL {
-  
   background-image: url("vl.png");
 }
 
@@ -224,7 +199,7 @@ border-radius:0px;
 .mrp {
   background-image: url("multi\ risque.png");
 }
-.coutainer_bleu_pro{
+.coutainer_bleu_pro {
   color: white;
   margin-top: 80px;
   text-align: left;
@@ -232,8 +207,8 @@ border-radius:0px;
   padding: 20px;
   div {
     display: flex;
-  justify-content: space-between;
-  align-items: center;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .contact_btn {
@@ -260,8 +235,6 @@ border-radius:0px;
   padding: 10px 20px;
   border-radius: 5px;
 }
-
-
 
 /* page particulier*/
 #section_1_part {
@@ -293,35 +266,30 @@ border-radius:0px;
   font-size: 2.2rem;
 }
 
-
-
-
-
-#card_section_2_part{
+#card_section_2_part {
   margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
 }
-#card_section_2_part div { 
+#card_section_2_part div {
   margin-top: 40px;
   border: solid;
   border-radius: 15px;
   margin: 10px;
-  border-color: #5046E5;
+  border-color: #5046e5;
 }
 #card_section_2 img {
   margin: 10px;
 }
 
-
-#troisieme_section_part h2{
+#troisieme_section_part h2 {
   margin-bottom: 40px;
 }
 
 #femme_medecin_part {
   margin-top: 100px;
   display: flex;
-  
+
   justify-content: space-between;
   gap: 40px;
   padding: 30px 40px;
@@ -330,8 +298,7 @@ border-radius:0px;
   margin: 0 auto 60px;
 }
 
-
-#femme_medecin_part  h2 {
+#femme_medecin_part h2 {
   margin-bottom: 20px;
   color: #47509e;
   font-family: "Roboto", sans-serif;
@@ -339,7 +306,6 @@ border-radius:0px;
   color: #47509e;
   font-family: "Roboto", sans-serif;
   font-size: 2.2rem;
-
 }
 
 #femme_medecin_part img {
@@ -352,19 +318,15 @@ border-radius:0px;
   object-fit: contain;
 }
 
-.color_p_part{
-  color: #5046E5;
+.color_p_part {
+  color: #5046e5;
 }
-
-
-
 
 /* page contact*/
 
-#formualaire_contact{
+#formualaire_contact {
   text-align: center;
 }
-
 
 #allignement_contact {
   display: flex;
@@ -374,45 +336,25 @@ border-radius:0px;
   margin-top: 150px;
   margin-bottom: 150px;
   color: white;
-  background-color: #5046E5;
+  background-color: #5046e5;
   padding: 30px;
 }
 
-
-
-#formualaire_contact h3{
-margin-top: 40px;
-margin-bottom: 50px;
-color: black;
+#formualaire_contact h3 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: black;
 }
 
-
-#background_img_contact{
+#background_img_contact {
   margin-top: 50px;
- margin-bottom: 70px;
- background-image: url("back_ground_contact.png");
- object-fit: cover;
+  margin-bottom: 70px;
+  background-image: url("back_ground_contact.png");
+  object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #coutainer_footer {
   color: white;
-
 }
 #coutainer_footer:visited {
   color: white;
@@ -426,8 +368,8 @@ color: black;
 }
 
 #coutainer_footer {
-    padding-top:50px;
-  padding-bottom:50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin-top: 200px;
   background-color: #5046e5;
 }
@@ -440,7 +382,6 @@ footer img {
   margin-top: 30px; /* comme tu l'avais */
   max-height: 70px; /* ajoute une limite si tu veux */
 }
-
 
 /* Colonnes individuelles */
 #colonne_1 ul,
@@ -472,40 +413,42 @@ footer img {
   cursor: pointer;
 }
 
-
 .container {
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "logo menu_footer"; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "logo menu_footer";
 }
 .menu_footer {
-
-  display: grid; 
-  grid-auto-rows: 1fr; 
-  grid-template-columns: 1.3fr 0.7fr; 
-  gap: 0px 0px; 
-  grid-area: menu_footer; 
-
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 0px 0px;
+  grid-area: menu_footer;
 }
 .submenu_footer {
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "left_menu menu_droit"; 
-  grid-area: 1 / 1 / 2 / 2; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "left_menu menu_droit";
+  grid-area: 1 / 1 / 2 / 2;
 }
-.left_menu { grid-area: left_menu; }
-.menu_droit { grid-area: menu_droit; }
-.socials_footer { grid-area: 1 / 2 / 2 / 3; }
-.logo { grid-area: logo; }
-footer  .logo {
+.left_menu {
+  grid-area: left_menu;
+}
+.menu_droit {
+  grid-area: menu_droit;
+}
+.socials_footer {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.logo {
+  grid-area: logo;
+}
+footer .logo {
   margin-left: 50px;
 }
-
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
