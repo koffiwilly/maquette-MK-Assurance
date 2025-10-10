@@ -144,15 +144,44 @@ h2 {
 }
 
 #TNS {
+ 
+-webkit-box-shadow: 10px 15px 5px 3px #7f7f7f;
+-moz-box-shadow: 10px 15px 5px 3px #7f7f7f;
+filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=10, OffY=15, Color='#7f7f7f', Positive='true');
+zoom:1;
+box-shadow: 10px 15px 5px 3px #7f7f7f;
+-moz-border-radius:0px;
+-webkit-border-radius:0px;
+border-radius:0px;
+
+/* pour IE9 et + ce hack ci-dessous peut être fait avec les commentaires conditionnels d'IE :
+[if gte IE 9]*/
+@media only screen{#selecteur{filter: none;}} /*Ie9+*/
   background-image: url("sante\ tns.png"); /* remplace par le vrai nom de ton image */
   background-size: cover;
 }
 
 #PREVOYANCE {
+  -webkit-box-shadow: 10px 15px 5px 3px #7f7f7f;
+-moz-box-shadow: 10px 15px 5px 3px #7f7f7f;
+filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=10, OffY=15, Color='#7f7f7f', Positive='true');
+zoom:1;
+box-shadow: 10px 15px 5px 3px #7f7f7f;
+-moz-border-radius:0px;
+-webkit-border-radius:0px;
+border-radius:0px;
   background-image: url("prevoyance.png");
 }
 
 #COLLECTIVE {
+  -webkit-box-shadow: 10px 15px 5px 3px #7f7f7f;
+-moz-box-shadow: 10px 15px 5px 3px #7f7f7f;
+filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=10, OffY=15, Color='#7f7f7f', Positive='true');
+zoom:1;
+box-shadow: 10px 15px 5px 3px #7f7f7f;
+-moz-border-radius:0px;
+-webkit-border-radius:0px;
+border-radius:0px;
   background-image: url("collective.png");
 }
 
@@ -180,6 +209,7 @@ h2 {
 
 /* Ajoute ici tes images de fond */
 .VL {
+  
   background-image: url("vl.png");
 }
 
