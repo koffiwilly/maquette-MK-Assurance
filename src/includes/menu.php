@@ -1,5 +1,5 @@
 <?php
-$classText = $_GET["page"] === "Accueil" ? "whiteColor" : "blackColor";
+$classText = !isset($_GET["page"]) || $_GET["page"] === "Accueil" ? "whiteColor" : "blackColor";
 ?>
 <header>
     <nav>
