@@ -14,7 +14,11 @@ include("./includes/menu.php");
 ?>
 
 <?php
-$pageName = $_GET["page"] ?? null;
+$pageName = null;
+if(isset($_GET["page"])){
+
+    $pageName = $_GET["page"] ?? null;
+}
 if(is_null($pageName)) {
     $pageName = "Accueil";
 }
