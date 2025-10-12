@@ -122,7 +122,9 @@ h2 {
   padding: 40px; /* espace intérieur optionnel */
   
 }
-
+.layer_blur{
+  background-image: url(la);
+}
 
 #assu_pro {
   display: flex;
@@ -132,6 +134,7 @@ h2 {
 }
 
 #assu_pro > div {
+  margin: 5px;
   flex: 1;
   height: 250px;
   background-size: cover;
@@ -278,8 +281,12 @@ background-image: url("collective.png");
 #card_section_2_part {
   margin-top: 50px;
   margin-bottom: 50px;
-  display: flex;
+  display: flex; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cartes sur la première ligne */
+  gap: 20px; /* espace entre les cartes */
 }
+
 #card_section_2_part div {
   margin-top: 40px;
   border: solid;
@@ -287,6 +294,10 @@ background-image: url("collective.png");
   margin: 10px;
   border-color: #5046e5;
 }
+
+ 
+
+
 #card_section_2 img {
   margin: 10px;
 }
@@ -538,10 +549,16 @@ margin: 30px;
 
 
 /* page particulier */
+@media screen and (max-width: 1024px) {
+  #card_section_2_part {
+    grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne sur tablette */
+  }
+}
 
-#card_section_2_part div {
-
-
+@media screen and (max-width: 768px) {
+  #card_section_2_part {
+    grid-template-columns: 1fr; /* 1 carte par ligne sur mobile */
+  }
 }
 
  
