@@ -92,6 +92,9 @@ nav li a:hover {
   padding-bottom: 300px;
   margin-bottom: 250px;
 }
+ #section_2_accueil {
+  flex-wrap: wrap;
+}
 
 #video-back_ground {
   position: absolute;
@@ -141,7 +144,7 @@ nav li a:hover {
 }
 
 .card_decenalle_accueil img, .card_vl_accueil img, .card_sante_accueil img, .card_emprunteur_accueil img{
-  
+
   box-shadow: 10px 15px 5px 3px #7f7f7f;
   border-radius: 15px;
   margin-bottom: 10px;
@@ -567,6 +570,75 @@ footer .logo {
 }
 /* ================== MOBILE FIRST ================== */
 @media screen and (max-width: 768px) {
+
+
+  /* Main sections */
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  /* === Section 1 Accueil === */
+  #section_1_accueil {
+    padding: 100px 20px;
+    padding-bottom: 150px;
+    margin-bottom: 100px;
+  }
+
+  #section_1_accueil h1 {
+    font-size: 1.5em;
+  }
+
+  #section_1_accueil h2 {
+    font-size: 1.2em;
+  }
+
+  /* === The Best Seller === */
+  #section_2_accueil + h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* === Section 2 Accueil - Cards === */
+  #section_2_accueil {
+    flex-direction: column; /* une card par ligne */
+    align-items: center;
+    gap: 20px; /* espace entre les cards */
+    position: relative;
+    z-index: 1; /* au-dessus de la vidéo */
+    margin-top: 50px; /* repousser sous la section 1 */
+  }
+
+  #section_2_accueil div {
+    width: 80%; /* largeur adaptée au mobile */
+    margin: 20px 0;
+  }
+
+  /* === Section Clients - Avis === */
+  .avis {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+  }
+
+  .avis-aside {
+    margin-left: 0;
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+
+
+
   /* Main sections */
   #serrage_main,
   #section_1_part,
