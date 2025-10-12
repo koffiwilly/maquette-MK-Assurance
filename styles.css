@@ -67,6 +67,107 @@ nav li a:hover {
   padding: 8px 20px;
 }
 
+/* page Accueil*/
+#section_clients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.avis {
+  display: flex;
+  margin-top: 10vh;
+}
+.avis-aside {
+  margin-left: 5vw;
+  justify-content: start;
+  text-align: start;
+}
+
+#section_1_accueil {
+  padding: 200px;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-bottom: 300px;
+  margin-bottom: 250px;
+}
+
+#video-back_ground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+#section_1_accueil img {
+  position: relative;
+  z-index: 1;
+  width: 450px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+#section_1_accueil h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0 10px;
+  color: white;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#section_1_accueil h2 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0 10px;
+  color: white;
+  font-size: 1.5em;
+}
+
+#section_2_accueil {
+  justify-content: center;
+  display: flex;
+}
+
+#section_2_accueil div {
+  margin: 30px;
+}
+
+.card_decenalle_accueil img, .card_vl_accueil img, .card_sante_accueil img, .card_emprunteur_accueil img{
+  
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.btn_rdv_accueil {
+  margin: 60px;
+  display: inline-block;
+  background-color: #1607fe;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+#section_3_accueil {
+  margin: 50px;
+}
+
+#section_3_accueil h2 {
+  margin: 40px;
+}
+
+#section_3_accueil p {
+  margin-bottom: 80px;
+}
+/* page pro */
 #serrage_main {
   display: flex;
   align-items: flex-start;
@@ -99,9 +200,8 @@ nav li a:hover {
   border-radius: 12px;
   display: block; /* supprime les marges/blancs en bas */
   object-fit: cover; /* supprime les bandes blanches sur les côtés */
-  box-shadow:
-    15px -20px 40px rgba(80, 70, 229, 0.16), /* ombre violette  */
-    -15px 30px 60px rgba(0, 0, 0, 0.4); /* ombre noire  */
+  box-shadow: 15px -20px 40px rgba(80, 70, 229, 0.16),
+    /* ombre violette  */ -15px 30px 60px rgba(0, 0, 0, 0.4); /* ombre noire  */
 }
 
 main {
@@ -114,15 +214,14 @@ h2 {
 }
 .layer_blur {
   margin-top: 50px;
-  
+
   background-color: rgba(80, 70, 229, 0.16); /* #5046E5 avec 6% d’opacité */
 
   filter: blur(0px);
   border-radius: 12px; /* arrondi optionnel */
   padding: 40px; /* espace intérieur optionnel */
-  
 }
-.layer_blur{
+.layer_blur {
   background-image: url(la);
 }
 
@@ -150,30 +249,29 @@ h2 {
 }
 
 #TNS {
-    box-shadow: 10px 15px 5px 3px #7f7f7f;
-  background-image: url("sante\ tns.png"); 
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
+  background-image: url("sante\ tns.png");
   background-size: cover;
 }
 
 #PREVOYANCE {
   box-shadow: 10px 15px 5px 3px #7f7f7f;
   background-image: url("prevoyance.png");
-   background-size: cover;
+  background-size: cover;
 }
 
 #EXPATRIE {
-box-shadow: 10px 15px 5px 3px #7f7f7f;
-background-image: url("expatrié.png");
-   background-size: cover;
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
+  background-image: url("expatrié.png");
+  background-size: cover;
 }
 #COLLECTIVE {
-box-shadow: 10px 15px 5px 3px #7f7f7f;
-background-image: url("collective.png");
-   background-size: cover;
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
+  background-image: url("collective.png");
+  background-size: cover;
 }
 
 #assu_entreprise {
-  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
@@ -191,7 +289,7 @@ background-image: url("collective.png");
   align-items: center;
   justify-content: center;
   border-radius: 12px;
- box-shadow: 10px 15px 5px 3px #7f7f7f;
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
   text-align: center;
 }
 
@@ -281,7 +379,7 @@ background-image: url("collective.png");
 #card_section_2_part {
   margin-top: 50px;
   margin-bottom: 50px;
-  display: flex; 
+  display: flex;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 cartes sur la première ligne */
   gap: 20px; /* espace entre les cartes */
@@ -294,9 +392,6 @@ background-image: url("collective.png");
   margin: 10px;
   border-color: #5046e5;
 }
-
- 
-
 
 #card_section_2 img {
   margin: 10px;
@@ -482,7 +577,6 @@ footer .logo {
     gap: 20px;
   }
 
-
   #serrage_main img,
   #section_1_part img,
   #femme_medecin_part img {
@@ -499,24 +593,25 @@ footer .logo {
     font-size: 1rem;
   }
 
-  h1 {text-align: center;
+  h1 {
+    text-align: center;
     margin: 50px;
     font-size: 1.8rem;
   }
 
-  h2 {text-align: center;
-margin: 30px;
+  h2 {
+    text-align: center;
+    margin: 30px;
     font-size: 1.5rem;
   }
 
-  h3 { margin: 30px;
+  h3 {
+    margin: 30px;
     font-size: 1.2rem;
     text-align: center;
   }
-
-
-  }
- #assu_pro {
+}
+#assu_pro {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
@@ -547,7 +642,6 @@ margin: 30px;
   padding: 12px 0;
 }
 
-
 /* page particulier */
 @media screen and (max-width: 1024px) {
   #card_section_2_part {
@@ -561,74 +655,72 @@ margin: 30px;
   }
 }
 
- 
-  /* Boutons */
-  .contact_btn,
-  .btn_devis {
-    width: 90%;
-    margin: 15px auto;
-    font-size: 1rem;
-    padding: 12px 0;
-  }
+/* Boutons */
+.contact_btn,
+.btn_devis {
+  width: 90%;
+  margin: 15px auto;
+  font-size: 1rem;
+  padding: 12px 0;
+}
 
-  /* Section devis / formulaire contact */
-  #troisieme_section_part,
-  #formualaire_contact {
-    padding: 20px;
-  }
+/* Section devis / formulaire contact */
+#troisieme_section_part,
+#formualaire_contact {
+  padding: 20px;
+}
 
-  #formualaire_contact input,
-  #formualaire_contact select,
-  #formualaire_contact textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-  }
+#formualaire_contact input,
+#formualaire_contact select,
+#formualaire_contact textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
-  .bouton_contact {
-    padding: 20px;
-    font-size: 1.5rem;
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
+.bouton_contact {
+  padding: 20px;
+  font-size: 1.5rem;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
 
-  /* Footer */
-  #coutainer_footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px 10px;
-  }
+/* Footer */
+#coutainer_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 10px;
+}
 
-  #coutainer_footer img {
-    margin: 0 0 20px 0;
-  }
+#coutainer_footer img {
+  margin: 0 0 20px 0;
+}
 
-  #colonne_1,
-  #colonne_2,
-  #colonne_3 {
-    margin: 10px 0;
-  }
+#colonne_1,
+#colonne_2,
+#colonne_3 {
+  margin: 10px 0;
+}
 
-  #colonne_1 ul,
-  #colonne_2 ul,
-  #colonne_3 ul {
-    margin: 0;
-    padding: 0;
-  }
+#colonne_1 ul,
+#colonne_2 ul,
+#colonne_3 ul {
+  margin: 0;
+  padding: 0;
+}
 
-  #colonne_3 img {
-    margin: 0 5px;
-  }
+#colonne_3 img {
+  margin: 0 5px;
+}
 
-  .container,
-  .menu_footer,
-  .submenu_footer {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
+.container,
+.menu_footer,
+.submenu_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
