@@ -158,6 +158,11 @@ h2 {
    background-size: cover;
 }
 
+#EXPATRIE {
+box-shadow: 10px 15px 5px 3px #7f7f7f;
+background-image: url("expatrié.png");
+   background-size: cover;
+}
 #COLLECTIVE {
 box-shadow: 10px 15px 5px 3px #7f7f7f;
 background-image: url("collective.png");
@@ -514,7 +519,7 @@ margin: 30px;
   background-position: center;
 }
 
-/* Adaptation mobile pour la section coutainer_bleu_pro , page pro */
+/* Adaptation mobile pour la section coutainer_bleu_pro , page pro*/
 
 .coutainer_bleu_pro div {
   text-align: center;
