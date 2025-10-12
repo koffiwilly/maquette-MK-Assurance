@@ -470,6 +470,7 @@ footer .logo {
   #serrage_main img,
   #section_1_part img,
   #femme_medecin_part img {
+    margin-top: 70px;
     flex: unset;
     max-width: 100%;
     height: auto;
@@ -482,18 +483,23 @@ footer .logo {
     font-size: 1rem;
   }
 
-  h1 {
+  h1 {text-align: center;
+    margin: 50px;
     font-size: 1.8rem;
   }
 
-  h2 {
+  h2 {text-align: center;
+margin: 30px;
     font-size: 1.5rem;
   }
 
-  h3 {
+  h3 { margin: 30px;
     font-size: 1.2rem;
+    text-align: center;
   }
 
+
+  }
  #assu_pro {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -502,14 +508,16 @@ footer .logo {
 }
 
 #assu_pro > div {
+  padding: 50px;
   height: 250px;
   background-size: cover; /* pour conserver la taille et éviter la déformation */
   background-position: center;
 }
 
-/* Adaptation mobile pour la section coutainer_bleu_pro */
+/* Adaptation mobile pour la section coutainer_bleu_pro , page pro */
 
 .coutainer_bleu_pro div {
+  text-align: center;
   flex-direction: column;
   align-items: center;
   gap: 20px; /* espace entre le texte et le bouton */
@@ -521,6 +529,14 @@ footer .logo {
   margin: 0 auto;
   font-size: 1rem;
   padding: 12px 0;
+}
+
+
+/* page particulier */
+
+#card_section_2_part div {
+
+
 }
 
  
@@ -591,6 +607,6 @@ footer .logo {
     flex-direction: column;
     gap: 10px;
   }
-}
+
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
