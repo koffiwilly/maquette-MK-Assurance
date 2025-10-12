@@ -17,6 +17,9 @@ RUN apt-get update && apt-get install -y \
 # Active les modules Apache nécessaires
 RUN a2enmod rewrite headers mime expires
 
+# Configure le ServerName global pour éviter l'avertissement
+RUN echo "ServerName mkassurance.fr" >> /etc/apache2/apache2.conf
+
 # Installe Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
