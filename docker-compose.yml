@@ -11,6 +11,7 @@ services:
     volumes:
       - ./src:/var/www/html
       - ./apache-config:/etc/apache2/sites-available
+      - /etc/letsencrypt:/etc/letsencrypt:ro
     environment:
       - APACHE_DOCUMENT_ROOT=/var/www/html
     depends_on:
