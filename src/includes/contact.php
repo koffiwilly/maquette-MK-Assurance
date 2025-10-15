@@ -52,11 +52,16 @@ if(count($_POST)){
             <select id="assurance" name="assurance" required>
                 <option value="">-- Sélectionnez une assurance --</option>
                 <option value="auto">Assurance Auto</option>
-                <option value="sante">Assurance Santé</option>
-                <option value="habitation">Assurance Habitation</option>
+                <option value="VL/PL">flotte VL/PL</option>
+                <option value="sante">Assurance Santé TNS</option>
+                <option value="prevoyance">Assurance prevoyance</option>
+                <option value="Responsabilité civile">Responsabilité civile pro</option>
                 <option value="emprunteur">Assurance Emprunteur</option>
-                <option value="vie">Assurance Vie</option>
-                <option value="professionnelle">
+                <option value="Multi Risque Professionel">Multi risque professionel</option>
+                <option value="santec collecive">Santé collecive</option>
+                <option value="DECENNALE">Décennale</option>
+                <option value="retraite">retraite</option>
+                <option value="EXPATRIE">Expatrié</option>
                     Responsabilité Professionnelle
                 </option></select
             ><br /><br />
