@@ -283,7 +283,12 @@ nav li a:hover {
   height: auto;
   margin-bottom: 30px;
 }
+/*.card_decenalle_accueil img , .card_vl_accueil img , .card_sante_accueil img , .card_emprunteur_accueil img {
 
+   box-shadow: 10px 15px 5px 3px #7f7f7f;
+  border-radius: 15px;
+  margin-bottom: 10px;
+ } */
 #section_1_accueil h1 {
   position: relative;
   z-index: 1;
@@ -308,9 +313,18 @@ nav li a:hover {
   display: flex;
 }
 
+#section_2_accueil img {
+    box-shadow: 10px 15px 5px 3px #7f7f7f;
+  border-radius: 15px;
+  margin-bottom: 10px;
+
+}
+
 #section_2_accueil div {
   margin: 30px;
   border-color: #333;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 
 .btn_rdv_accueil{
@@ -418,6 +432,12 @@ h2 {
 
 #PREVOYANCE {
   background-image: url("./medias/prevoyance.png");
+  
+}
+#EXPATRIE {
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
+  background-image: url("./medias/expatrié.png");
+  background-size: cover;
 }
 
 #COLLECTIVE {
