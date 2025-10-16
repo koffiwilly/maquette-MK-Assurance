@@ -63,29 +63,26 @@ nav li a {
   display: inline-block;
 }
 @media screen and (min-width: 768px) {
-  .whiteColor{
+  .whiteColor {
     color: white !important;
   }
-  .blackColor{
-    color:black;
+  .blackColor {
+    color: black;
   }
 }
 
-
-
-#section_clients{
+#section_clients {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 .avis {
   display: flex;
   margin-top: 10vh;
 }
-.avis-aside{
-  margin-left:5vw;
+.avis-aside {
+  margin-left: 5vw;
   justify-content: start;
   text-align: start;
 }
@@ -182,7 +179,7 @@ nav li a:hover {
     text-align: left;
     transition: 0.3s ease;
     gap: 0;
-    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     padding: 80px 0 20px 0;
     justify-content: flex-start;
@@ -265,7 +262,7 @@ nav li a:hover {
   margin-bottom: 220px;
 }
 
-#video-back_ground{
+#video-back_ground {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -283,12 +280,14 @@ nav li a:hover {
   height: auto;
   margin-bottom: 30px;
 }
-.card_decenalle_accueil img , .card_vl_accueil img , .card_sante_accueil img , .card_emprunteur_accueil img {
-
-   box-shadow: 10px 15px 5px 3px #7f7f7f;
+.card_decenalle_accueil img,
+.card_vl_accueil img,
+.card_sante_accueil img,
+.card_emprunteur_accueil img {
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
   border-radius: 15px;
   margin-bottom: 10px;
- } 
+}
 #section_1_accueil h1 {
   position: relative;
   z-index: 1;
@@ -308,16 +307,15 @@ nav li a:hover {
   font-size: 1.5em;
 }
 
-#section_2_accueil{
+#section_2_accueil {
   justify-content: center;
   display: flex;
 }
 
 #section_2_accueil img {
-    box-shadow: 10px 15px 5px 3px #7f7f7f;
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
   border-radius: 15px;
   margin-bottom: 10px;
-
 }
 
 #section_2_accueil div {
@@ -327,10 +325,10 @@ nav li a:hover {
   margin-bottom: 10px;
 }
 
-.btn_rdv_accueil{
+.btn_rdv_accueil {
   margin: 60px;
   display: inline-block;
-  background-color: #1607FE;
+  background-color: #1607fe;
   color: white;
   padding: 12px 24px;
   border-radius: 6px;
@@ -341,7 +339,7 @@ nav li a:hover {
   margin: 50px;
 }
 
-#section_3_accueil h2{
+#section_3_accueil h2 {
   margin: 40px;
 }
 
@@ -380,7 +378,7 @@ nav li a:hover {
   height: auto;
   border-radius: 12px;
   box-shadow: 15px -20px 40px rgba(80, 70, 229, 0.16),
-  -15px 30px 60px rgba(0, 0, 0, 0.35);
+    -15px 30px 60px rgba(0, 0, 0, 0.35);
   object-fit: contain;
 }
 
@@ -435,7 +433,6 @@ h2 {
   box-shadow: 10px 15px 5px 3px #7f7f7f;
   background-image: url("./medias/prevoyance.png");
   background-size: cover;
-  
 }
 #EXPATRIE {
   box-shadow: 10px 15px 5px 3px #7f7f7f;
@@ -466,7 +463,7 @@ h2 {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
- box-shadow: 10px 15px 5px 3px #7f7f7f;
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
   text-align: center;
 }
 
@@ -486,7 +483,7 @@ h2 {
   background-image: url("./medias/multi\ risque.png");
 }
 
-.coutainer_bleu_pro{
+.coutainer_bleu_pro {
   color: white;
   margin-top: 80px;
   text-align: left;
@@ -545,7 +542,7 @@ h2 {
   height: auto;
   border-radius: 12px;
   box-shadow: 15px -20px 40px rgba(80, 70, 229, 0.16),
-  -15px 30px 60px rgba(0, 0, 0, 0.35);
+    -15px 30px 60px rgba(0, 0, 0, 0.35);
   object-fit: contain;
 }
 
@@ -558,11 +555,11 @@ h2 {
   font-size: 2.2rem;
 }
 
-#card_section_2_part{
+#card_section_2_part {
   margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
-   grid-template-columns: repeat(3, 1fr); /* 3 cartes sur la première ligne */
+  grid-template-columns: repeat(3, 1fr); /* 3 cartes sur la première ligne */
   gap: 20px; /* espace entre les cartes */
 }
 
@@ -571,14 +568,14 @@ h2 {
   border: solid;
   border-radius: 15px;
   margin: 10px;
-  border-color: #5046E5;
+  border-color: #5046e5;
 }
 
 #card_section_2 img {
   margin: 10px;
 }
 
-#troisieme_section_part h2{
+#troisieme_section_part h2 {
   margin-bottom: 40px;
 }
 
@@ -593,7 +590,7 @@ h2 {
   margin: 0 auto 60px;
 }
 
-#femme_medecin_part  h2 {
+#femme_medecin_part h2 {
   margin-bottom: 20px;
   color: #47509e;
   font-family: "Roboto", sans-serif;
@@ -609,16 +606,16 @@ h2 {
   height: auto;
   border-radius: 12px;
   box-shadow: 15px -20px 40px rgba(80, 70, 229, 0.16),
-  -15px 30px 60px rgba(0, 0, 0, 0.35);
+    -15px 30px 60px rgba(0, 0, 0, 0.35);
   object-fit: contain;
 }
 
-.color_p_part{
-  color: #5046E5;
+.color_p_part {
+  color: #5046e5;
 }
 
 /* page contact*/
-#formualaire_contact{
+#formualaire_contact {
   text-align: center;
   background-color: white;
   margin-bottom: 10vh;
@@ -633,22 +630,22 @@ h2 {
   margin-top: 150px;
   margin-bottom: 10vh;
   color: white;
-  background-color: #5046E5;
+  background-color: #5046e5;
   padding: 30px;
 }
 
-#formualaire_contact h3{
+#formualaire_contact h3 {
   margin-top: 40px;
   margin-bottom: 50px;
   color: black;
 }
-#contactPage{
+#contactPage {
   margin-bottom: 10vh;
 }
-#background_img_contact{
+#background_img_contact {
   position: absolute;
-  height:150vh;
-  width:100vw;
+  height: 150vh;
+  width: 100vw;
   margin-bottom: 70px;
   background-image: url("./medias/back_ground_contact.png");
   object-fit: cover;
@@ -721,8 +718,7 @@ footer img {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: 
-    "logo menu_footer";
+  grid-template-areas: "logo menu_footer";
 }
 
 .menu_footer {
@@ -738,22 +734,28 @@ footer img {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: 
-    "left_menu menu_droit";
+  grid-template-areas: "left_menu menu_droit";
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.left_menu { grid-area: left_menu; }
-.menu_droit { grid-area: menu_droit; }
-.socials_footer { grid-area: 1 / 2 / 2 / 3; }
-.logo { grid-area: logo; }
+.left_menu {
+  grid-area: left_menu;
+}
+.menu_droit {
+  grid-area: menu_droit;
+}
+.socials_footer {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.logo {
+  grid-area: logo;
+}
 
 footer .logo {
   margin-left: 50px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
-
 
 /* CSS à ajouter dans votre style.css existant - CAROUSEL PARTENAIRES */
 
@@ -831,7 +833,7 @@ footer .logo {
 /* Gradients sur les bords pour effet de fondu */
 #carousel::before,
 #carousel::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   width: 50px;
@@ -900,4 +902,213 @@ footer .logo {
   .carousel-track {
     animation-duration: 20s;
   }
+}
+
+@media screen and (max-width: 768px) {
+  /* === Section 1 Accueil === */
+  #section_1_accueil {
+    padding: 100px 20px;
+    padding-bottom: 150px;
+    margin-bottom: 100px;
+  }
+
+  #section_1_accueil h1 {
+    font-size: 1.5em;
+  }
+
+  #section_1_accueil h2 {
+    font-size: 1.2em;
+  }
+
+  /* === The Best Seller === */
+  #section_2_accueil + h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* === Section 2 Accueil - Cards === */
+  #section_2_accueil {
+    flex-direction: column; /* une card par ligne */
+    align-items: center;
+    gap: 20px; /* espace entre les cards */
+    position: relative;
+    z-index: 1; /* au-dessus de la vidéo */
+    margin-top: 50px; /* repousser sous la section 1 */
+  }
+
+  #section_2_accueil div {
+    width: 80%; /* largeur adaptée au mobile */
+    margin: 20px 0;
+  }
+
+  /* === Section Clients - Avis === */
+  .avis {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+  }
+
+  .avis-aside {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Main sections */
+#serrage_main,
+#section_1_part,
+#femme_medecin_part {
+  flex-direction: column !important;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+#serrage_main img,
+#section_1_part img,
+#femme_medecin_part img {
+  margin-top: 70px;
+  flex: unset;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.texte_p1_pro,
+.texte {
+  text-align: center;
+  font-size: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px;
+  font-size: 1.8rem;
+}
+
+h2 {
+  text-align: center;
+  margin: 30px;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 30px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#assu_pro {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  padding: 20px;
+}
+
+#assu_pro > div {
+  padding: 50px;
+  height: 250px;
+  background-size: cover; /* pour conserver la taille et éviter la déformation */
+  background-position: center;
+}
+
+/* Adaptation mobile pour la section coutainer_bleu_pro , page pro*/
+
+.coutainer_bleu_pro div {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* espace entre le texte et le bouton */
+}
+
+.coutainer_bleu_pro .contact_btn {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1rem;
+  padding: 12px 0;
+}
+
+/* page particulier */
+@media screen and (max-width: 1024px) {
+  #card_section_2_part {
+    grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne sur tablette */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #card_section_2_part {
+    grid-template-columns: 1fr; /* 1 carte par ligne sur mobile */
+  }
+}
+
+/* Boutons */
+.contact_btn,
+.btn_devis {
+  width: 90%;
+  margin: 15px auto;
+  font-size: 1rem;
+  padding: 12px 0;
+}
+
+/* Section devis / formulaire contact */
+#troisieme_section_part,
+#formualaire_contact {
+  padding: 20px;
+}
+
+#formualaire_contact input,
+#formualaire_contact select,
+#formualaire_contact textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.bouton_contact {
+  padding: 20px;
+  font-size: 1.5rem;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+/* Footer */
+#coutainer_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+#coutainer_footer img {
+  margin: 0 0 20px 0;
+}
+
+#colonne_1,
+#colonne_2,
+#colonne_3 {
+  margin: 10px 0;
+}
+
+#colonne_1 ul,
+#colonne_2 ul,
+#colonne_3 ul {
+  margin: 0;
+  padding: 0;
+}
+
+#colonne_3 img {
+  margin: 0 5px;
+}
+
+.container,
+.menu_footer,
+.submenu_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
