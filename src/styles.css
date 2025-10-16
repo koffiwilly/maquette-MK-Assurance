@@ -283,12 +283,12 @@ nav li a:hover {
   height: auto;
   margin-bottom: 30px;
 }
-/*.card_decenalle_accueil img , .card_vl_accueil img , .card_sante_accueil img , .card_emprunteur_accueil img {
+.card_decenalle_accueil img , .card_vl_accueil img , .card_sante_accueil img , .card_emprunteur_accueil img {
 
    box-shadow: 10px 15px 5px 3px #7f7f7f;
   border-radius: 15px;
   margin-bottom: 10px;
- } */
+ } 
 #section_1_accueil h1 {
   position: relative;
   z-index: 1;
