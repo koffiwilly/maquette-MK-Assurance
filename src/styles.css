@@ -262,7 +262,7 @@ nav li a:hover {
   text-align: center;
   position: relative;
   padding-bottom: 300px;
-  margin-bottom: 250px;
+  margin-bottom: 220px;
 }
 
 #video-back_ground{
@@ -426,12 +426,15 @@ h2 {
 }
 
 #TNS {
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
   background-image: url("./medias/sante\ tns.png");
   background-size: cover;
 }
 
 #PREVOYANCE {
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
   background-image: url("./medias/prevoyance.png");
+  background-size: cover;
   
 }
 #EXPATRIE {
@@ -441,6 +444,7 @@ h2 {
 }
 
 #COLLECTIVE {
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
   background-image: url("./medias/collective.png");
 }
 
@@ -455,14 +459,14 @@ h2 {
   height: 250px;
   background-size: cover;
   background-position: center;
-  color: rgb(10, 10, 10);
+
   font-weight: bold;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ box-shadow: 10px 15px 5px 3px #7f7f7f;
   text-align: center;
 }
 
