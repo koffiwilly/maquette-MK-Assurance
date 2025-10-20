@@ -254,12 +254,11 @@ nav li a:hover {
 
 /*page accueil*/
 #section_1_accueil {
-  padding: 200px;
+  padding: 100px 20px 150px 20px;
   color: white;
   text-align: center;
   position: relative;
-  padding-bottom: 300px;
-  margin-bottom: 220px;
+  margin-bottom: 70px;
 }
 
 #video-back_ground {
@@ -957,81 +956,80 @@ footer .logo {
   }
 }
 @media screen and (max-width: 768px) {
+  /* Main sections */
+  #serrage_main,
+  #section_1_part,
+  #femme_medecin_part {
+    flex-direction: column !important;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
 
-/* Main sections */
-#serrage_main,
-#section_1_part,
-#femme_medecin_part {
-  flex-direction: column !important;
-  align-items: center;
-  padding: 20px;
-  gap: 20px;
-}
+  #serrage_main img,
+  #section_1_part img,
+  #femme_medecin_part img {
+    margin-top: 70px;
+    flex: unset;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
 
-#serrage_main img,
-#section_1_part img,
-#femme_medecin_part img {
-  margin-top: 70px;
-  flex: unset;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
+  .texte_p1_pro,
+  .texte {
+    text-align: center;
+    font-size: 1rem;
+  }
 
-.texte_p1_pro,
-.texte {
-  text-align: center;
-  font-size: 1rem;
-}
+  h1 {
+    text-align: center;
+    margin: 50px;
+    font-size: 1.8rem;
+  }
 
-h1 {
-  text-align: center;
-  margin: 50px;
-  font-size: 1.8rem;
-}
+  h2 {
+    text-align: center;
+    margin: 30px;
+    font-size: 1.5rem;
+  }
 
-h2 {
-  text-align: center;
-  margin: 30px;
-  font-size: 1.5rem;
-}
+  h3 {
+    margin: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
 
-h3 {
-  margin: 30px;
-  font-size: 1.2rem;
-  text-align: center;
-}
+  #assu_pro {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    padding: 20px;
+  }
 
-#assu_pro {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
-  padding: 20px;
-}
+  #assu_pro > div {
+    padding: 50px;
+    height: 250px;
+    background-size: cover; /* pour conserver la taille et éviter la déformation */
+    background-position: center;
+  }
 
-#assu_pro > div {
-  padding: 50px;
-  height: 250px;
-  background-size: cover; /* pour conserver la taille et éviter la déformation */
-  background-position: center;
-}
+  /* Adaptation mobile pour la section coutainer_bleu_pro , page pro*/
 
-/* Adaptation mobile pour la section coutainer_bleu_pro , page pro*/
+  .coutainer_bleu_pro div {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* espace entre le texte et le bouton */
+  }
 
-.coutainer_bleu_pro div {
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px; /* espace entre le texte et le bouton */
-}
-
-.coutainer_bleu_pro .contact_btn {
-  width: 90%;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 1rem;
-  padding: 12px 0;
-}
+  .coutainer_bleu_pro .contact_btn {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
 }
 /* page particulier */
 @media screen and (max-width: 768px) {
@@ -1041,7 +1039,6 @@ h3 {
     gap: 20px;
   }
 }
-
 /* Boutons */
 .contact_btn,
 .btn_devis {
