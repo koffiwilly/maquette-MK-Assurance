@@ -956,6 +956,7 @@ footer .logo {
     text-align: center;
   }
 }
+@media screen and (max-width: 768px) {
 
 /* Main sections */
 #serrage_main,
@@ -1031,7 +1032,7 @@ h3 {
   font-size: 1rem;
   padding: 12px 0;
 }
-
+}
 /* page particulier */
 @media screen and (max-width: 1024px) {
   #card_section_2_part {
