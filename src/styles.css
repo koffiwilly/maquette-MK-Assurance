@@ -1034,15 +1034,11 @@ h3 {
 }
 }
 /* page particulier */
-@media screen and (max-width: 1024px) {
-  #card_section_2_part {
-    grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne sur tablette */
-  }
-}
-
 @media screen and (max-width: 768px) {
   #card_section_2_part {
-    grid-template-columns: 1fr; /* 1 carte par ligne sur mobile */
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
