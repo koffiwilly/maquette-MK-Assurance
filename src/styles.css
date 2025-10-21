@@ -929,46 +929,41 @@ footer .logo {
 }
 
 @media screen and (max-width: 768px) {
-  /* === Section 1 Accueil === */
+  #video-back_ground {
+    width: auto;        /* largeur automatique pour mobile */
+    height: 100vh;      /* hauteur pleine */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Section 1 Accueil */
   #section_1_accueil {
-    padding: 100px 20px;
-    padding-bottom: 150px;
-    margin-bottom: 100px;
+    padding: 80px 15px 120px 15px;
   }
 
   #section_1_accueil h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   #section_1_accueil h2 {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
-  /* === The Best Seller === */
-  #section_2_accueil + h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-  }
-
-  /* === Section 2 Accueil - Cards === */
+  /* Section 2 - Cards */
   #section_2_accueil {
-    flex-direction: column; /* une card par ligne */
+    flex-direction: column;
     align-items: center;
-    gap: 20px; /* espace entre les cards */
-    position: relative;
-    z-index: 1; /* au-dessus de la vidéo */
-    margin-top: 50px; /* repousser sous la section 1 */
+    gap: 15px;
+    margin-top: 40px;
   }
 
   #section_2_accueil div {
-    width: 80%; /* largeur adaptée au mobile */
-    margin: 20px 0;
+    width: 90%;
+    margin: 15px 0;
   }
 
-  /* === Section Clients - Avis === */
+  /* Section Clients */
   .avis {
     flex-direction: column;
     align-items: center;
@@ -978,6 +973,18 @@ footer .logo {
   .avis-aside {
     margin-left: 0;
     text-align: center;
+  }
+
+  /* Section 3 Accueil - Texte flou */
+  #section_3_accueil .flou_text_accueil {
+    padding: 20px;
+    margin: 20px;
+    box-shadow: none; /* enlever l’ombre par défaut sur mobile */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  #section_3_accueil .flou_text_accueil:hover {
+    box-shadow: 0 0 30px rgba(131, 77, 255, 0.26); /* légère ombre sur hover */
   }
 }
 @media screen and (max-width: 768px) {
