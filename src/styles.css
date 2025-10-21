@@ -453,7 +453,7 @@ h2 {
 }
 
 #assu_entreprise > div {
-  height: 250px;
+  height: 200px;
   background-size: cover;
   background-position: center;
 
@@ -464,6 +464,7 @@ h2 {
   justify-content: center;
   border-radius: 12px;
   box-shadow: 10px 15px 5px 3px #7f7f7f;
+  margin: 10px;
   text-align: center;
 }
 
@@ -556,19 +557,20 @@ h2 {
 }
 
 #card_section_2_part {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: flex;
-  grid-template-columns: repeat(3, 1fr); /* 3 cartes sur la première ligne */
-  gap: 20px; /* espace entre les cartes */
+  margin: 50px auto; /* espace haut/bas et centrage horizontal */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* s’adapte à la taille de l’écran */
+  gap: 30px; /* espace équilibré entre les cartes */
+  max-width: 1200px; /* limite la largeur totale pour recentrer le contenu */
+  padding: 0 20px; /* petit espace sur les côtés pour respirer */
 }
 
 #card_section_2_part div {
-  margin-top: 40px;
-  border: solid;
+  border: solid 2px #5046e5;
   border-radius: 15px;
-  margin: 10px;
-  border-color: #5046e5;
+  padding: 20px; /* espace intérieur équilibré */
+  background-color: white; /* facultatif : pour mieux détacher du fond */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* léger relief */
 }
 
 #card_section_2 img {
