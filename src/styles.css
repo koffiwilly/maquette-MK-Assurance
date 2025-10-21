@@ -1071,13 +1071,13 @@ footer .logo {
     gap: 20px;
   }
 }
-/* Boutons */
-.contact_btn,
-.btn_devis {
-  width: 90%;
-  margin: 15px auto;
-  font-size: 1rem;
-  padding: 12px 0;
+@media screen and (max-width: 768px) {
+  .contact_btn,
+  .btn_devis {
+    width: 90%;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
 }
 
 /* Section devis / formulaire contact */
