@@ -41,4 +41,4 @@ RUN chown -R www-data:www-data /var/www/html \
 EXPOSE 80 443
 
 # Démarre Apache en avant-plan
-CMD ["apache2ctl", "-D", "FOREGROUND"]
+CMD ["apachectl", "-D", "FOREGROUND"]
