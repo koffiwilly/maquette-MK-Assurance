@@ -35,7 +35,10 @@
                                     /></a>
                                 <a href=""><img src="./medias/Facebook.png" alt="" /></a>
                             </li>
+                            <li>0611021114</li>
+                            <li>n.medkour@mkassurance.fr</li>
                         </ul>
+                        
                     </div>
                 </div>
             </div>
