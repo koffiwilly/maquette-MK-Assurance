@@ -15,9 +15,14 @@
                     <div class="menu_droit">
                         <div id="colonne_2">
                             <ul>
-                                <li>FAQ</li>
+                                
                                 <a href="?page=contact"> <li>Contact</li></a>
-                            </ul>
+                                <li> Siret : 9519879730017</li>
+                               <li>
+                            <a href="https://www.google.com/maps/search/Rue%20Vendome%20254%2C%2069003%20Lyon" target="_blank">
+      254 rue Vendome, 69003 Lyon
+    </a>
+  </li>
                         </div>
                     </div>
                 </div>
@@ -35,8 +40,14 @@
                                     /></a>
                                 <a href=""><img src="./medias/Facebook.png" alt="" /></a>
                             </li>
-                            <li>0611021114</li>
-                            <li>n.medkour@mkassurance.fr</li>
+                             <li>
+    <a href="tel:+33611021114">06 11 02 11 14</a>
+  </li>
+                            <li>
+                         <a href="mailto:n.medkour@mkassurance.fr">
+                             n.medkour@mkassurance.fr
+    </a>
+  </li>
                         </ul>
                         
                     </div>
