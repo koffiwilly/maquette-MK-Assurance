@@ -250,6 +250,7 @@ nav li a:hover {
   }
 }
 
+
 /* Le reste de votre CSS existant reste inchangé */
 
 /*page accueil*/
@@ -399,8 +400,10 @@ main {
 
 h2 {
   color: #47509e;
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.layer_blur h2 {  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);}
 .layer_blur {
   margin-top: 50px;
   background-color: rgba(80, 70, 229, 0.16);
