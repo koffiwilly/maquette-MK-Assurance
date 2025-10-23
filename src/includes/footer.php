@@ -41,13 +41,13 @@
                                 <a href=""><img src="./medias/Facebook.png" alt="" /></a>
                             </li>
                              <li>
-    <a href="tel:+33611021114">06 11 02 11 14</a>
-  </li>
+                                <a href="tel:+33611021114">06 11 02 11 14</a>
+                             </li>
                             <li>
-                         <a href="mailto:n.medkour@mkassurance.fr">
-                             n.medkour@mkassurance.fr
-    </a>
-  </li>
+                                  <a href="mailto:n.medkour@mkassurance.fr">
+                                      n.medkour@mkassurance.fr
+                             </a>
+                                 </li>
                         </ul>
                         
                     </div>
