@@ -63,29 +63,26 @@ nav li a {
   display: inline-block;
 }
 @media screen and (min-width: 768px) {
-  .whiteColor{
+  .whiteColor {
     color: white !important;
   }
-  .blackColor{
-    color:black;
+  .blackColor {
+    color: black;
   }
 }
 
-
-
-#section_clients{
+#section_clients {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 .avis {
   display: flex;
   margin-top: 10vh;
 }
-.avis-aside{
-  margin-left:5vw;
+.avis-aside {
+  margin-left: 5vw;
   justify-content: start;
   text-align: start;
 }
@@ -182,7 +179,7 @@ nav li a:hover {
     text-align: left;
     transition: 0.3s ease;
     gap: 0;
-    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     padding: 80px 0 20px 0;
     justify-content: flex-start;
@@ -257,15 +254,14 @@ nav li a:hover {
 
 /*page accueil*/
 #section_1_accueil {
-  padding: 200px;
+  padding: 100px 20px 150px 20px;
   color: white;
   text-align: center;
   position: relative;
-  padding-bottom: 300px;
-  margin-bottom: 250px;
+  margin-bottom: 200px;
 }
 
-#video-back_ground{
+#video-back_ground {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -274,6 +270,7 @@ nav li a:hover {
   transform: translate(-50%, -50%);
   object-fit: cover;
   z-index: -1;
+  margin-bottom: 70px;
 }
 
 #section_1_accueil img {
@@ -283,7 +280,14 @@ nav li a:hover {
   height: auto;
   margin-bottom: 30px;
 }
-
+.card_decenalle_accueil img,
+.card_vl_accueil img,
+.card_sante_accueil img,
+.card_emprunteur_accueil img {
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
 #section_1_accueil h1 {
   position: relative;
   z-index: 1;
@@ -303,20 +307,28 @@ nav li a:hover {
   font-size: 1.5em;
 }
 
-#section_2_accueil{
+#section_2_accueil {
   justify-content: center;
   display: flex;
+}
+
+#section_2_accueil img {
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 
 #section_2_accueil div {
   margin: 30px;
   border-color: #333;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 
-.btn_rdv_accueil{
+.btn_rdv_accueil {
   margin: 60px;
   display: inline-block;
-  background-color: #1607FE;
+  background-color: #1607fe;
   color: white;
   padding: 12px 24px;
   border-radius: 6px;
@@ -327,13 +339,22 @@ nav li a:hover {
   margin: 50px;
 }
 
-#section_3_accueil h2{
+#section_3_accueil h2 {
   margin: 40px;
 }
 
 #section_3_accueil p {
   margin-bottom: 80px;
 }
+
+.flou_text_accueil {
+  transition: box-shadow 0.3s ease; /* effet doux au survol */
+}
+
+.flou_text_accueil:hover {
+  box-shadow: 0 0 25px rgba(131, 77, 255, 0.26); /* ombre plus large autour de toute la div */
+}
+
 
 /* page pro*/
 #serrage_main {
@@ -366,7 +387,7 @@ nav li a:hover {
   height: auto;
   border-radius: 12px;
   box-shadow: 15px -20px 40px rgba(80, 70, 229, 0.16),
-  -15px 30px 60px rgba(0, 0, 0, 0.35);
+    -15px 30px 60px rgba(0, 0, 0, 0.35);
   object-fit: contain;
 }
 
@@ -412,15 +433,24 @@ h2 {
 }
 
 #TNS {
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
   background-image: url("./medias/sante\ tns.png");
   background-size: cover;
 }
 
 #PREVOYANCE {
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
   background-image: url("./medias/prevoyance.png");
+  background-size: cover;
+}
+#EXPATRIE {
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
+  background-image: url("./medias/expatrié.png");
+  background-size: cover;
 }
 
 #COLLECTIVE {
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
   background-image: url("./medias/collective.png");
 }
 
@@ -432,17 +462,18 @@ h2 {
 }
 
 #assu_entreprise > div {
-  height: 250px;
+  height: 200px;
   background-size: cover;
   background-position: center;
-  color: rgb(10, 10, 10);
+
   font-weight: bold;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 15px 5px 3px #7f7f7f;
+  margin: 10px;
   text-align: center;
 }
 
@@ -462,7 +493,7 @@ h2 {
   background-image: url("./medias/multi\ risque.png");
 }
 
-.coutainer_bleu_pro{
+.coutainer_bleu_pro {
   color: white;
   margin-top: 80px;
   text-align: left;
@@ -521,7 +552,7 @@ h2 {
   height: auto;
   border-radius: 12px;
   box-shadow: 15px -20px 40px rgba(80, 70, 229, 0.16),
-  -15px 30px 60px rgba(0, 0, 0, 0.35);
+    -15px 30px 60px rgba(0, 0, 0, 0.35);
   object-fit: contain;
 }
 
@@ -534,25 +565,28 @@ h2 {
   font-size: 2.2rem;
 }
 
-#card_section_2_part{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: flex;
+#card_section_2_part {
+  margin: 50px auto; /* espace haut/bas et centrage horizontal */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* s’adapte à la taille de l’écran */
+  gap: 30px; /* espace équilibré entre les cartes */
+  max-width: 1200px; /* limite la largeur totale pour recentrer le contenu */
+  padding: 0 20px; /* petit espace sur les côtés pour respirer */
 }
 
 #card_section_2_part div {
-  margin-top: 40px;
-  border: solid;
+  border: solid 2px #5046e5;
   border-radius: 15px;
-  margin: 10px;
-  border-color: #5046E5;
+  padding: 20px; /* espace intérieur équilibré */
+  background-color: white; /* facultatif : pour mieux détacher du fond */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* léger relief */
 }
 
 #card_section_2 img {
   margin: 10px;
 }
 
-#troisieme_section_part h2{
+#troisieme_section_part h2 {
   margin-bottom: 40px;
 }
 
@@ -567,7 +601,7 @@ h2 {
   margin: 0 auto 60px;
 }
 
-#femme_medecin_part  h2 {
+#femme_medecin_part h2 {
   margin-bottom: 20px;
   color: #47509e;
   font-family: "Roboto", sans-serif;
@@ -583,16 +617,16 @@ h2 {
   height: auto;
   border-radius: 12px;
   box-shadow: 15px -20px 40px rgba(80, 70, 229, 0.16),
-  -15px 30px 60px rgba(0, 0, 0, 0.35);
+    -15px 30px 60px rgba(0, 0, 0, 0.35);
   object-fit: contain;
 }
 
-.color_p_part{
-  color: #5046E5;
+.color_p_part {
+  color: #5046e5;
 }
 
 /* page contact*/
-#formualaire_contact{
+#formualaire_contact {
   text-align: center;
   background-color: white;
   margin-bottom: 10vh;
@@ -607,22 +641,22 @@ h2 {
   margin-top: 150px;
   margin-bottom: 10vh;
   color: white;
-  background-color: #5046E5;
+  background-color: #5046e5;
   padding: 30px;
 }
 
-#formualaire_contact h3{
+#formualaire_contact h3 {
   margin-top: 40px;
   margin-bottom: 50px;
   color: black;
 }
-#contactPage{
+#contactPage {
   margin-bottom: 10vh;
 }
-#background_img_contact{
+#background_img_contact {
   position: absolute;
-  height:150vh;
-  width:100vw;
+  height: 150vh;
+  width: 100vw;
   margin-bottom: 70px;
   background-image: url("./medias/back_ground_contact.png");
   object-fit: cover;
@@ -630,6 +664,19 @@ h2 {
   padding-bottom: 20vh;
   margin-bottom: 20vh;
   z-index: -10;
+}
+
+#formualaire_contact input,
+#formualaire_contact select,
+#formualaire_contact textarea {
+  width: 60%; /* ajuste selon ton design */
+  max-width: 500px; /* pour ne pas dépasser sur grand écran */
+  padding: 10px;
+  box-sizing: border-box;
+  display: block;
+  margin: 10px auto; /* centre les champs et espace entre eux */
+  border-radius: 6px; /* arrondir un peu les bords */
+  border: 1px solid #ccc; /* couleur de bordure douce */
 }
 
 /* Footer */
@@ -695,8 +742,7 @@ footer img {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: 
-    "logo menu_footer";
+  grid-template-areas: "logo menu_footer";
 }
 
 .menu_footer {
@@ -712,22 +758,28 @@ footer img {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: 
-    "left_menu menu_droit";
+  grid-template-areas: "left_menu menu_droit";
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.left_menu { grid-area: left_menu; }
-.menu_droit { grid-area: menu_droit; }
-.socials_footer { grid-area: 1 / 2 / 2 / 3; }
-.logo { grid-area: logo; }
+.left_menu {
+  grid-area: left_menu;
+}
+.menu_droit {
+  grid-area: menu_droit;
+}
+.socials_footer {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.logo {
+  grid-area: logo;
+}
 
 footer .logo {
   margin-left: 50px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
-
 
 /* CSS à ajouter dans votre style.css existant - CAROUSEL PARTENAIRES */
 
@@ -805,7 +857,7 @@ footer .logo {
 /* Gradients sur les bords pour effet de fondu */
 #carousel::before,
 #carousel::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   width: 50px;
@@ -873,5 +925,209 @@ footer .logo {
 
   .carousel-track {
     animation-duration: 20s;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #video-back_ground {
+    width: auto;        /* largeur automatique pour mobile */
+    height: 100vh;      /* hauteur pleine */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Section 1 Accueil */
+  #section_1_accueil {
+    padding: 80px 15px 120px 15px;
+  }
+
+  #section_1_accueil h1 {
+    font-size: 1.4em;
+  }
+
+  #section_1_accueil h2 {
+    font-size: 1.1em;
+  }
+
+  /* Section 2 - Cards */
+  #section_2_accueil {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  #section_2_accueil div {
+    width: 90%;
+    margin: 15px 0;
+  }
+
+  /* Section Clients */
+  .avis {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+  }
+
+  .avis-aside {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Section 3 Accueil - Texte flou */
+  #section_3_accueil .flou_text_accueil {
+    padding: 20px;
+    margin: 20px;
+    box-shadow: none; /* enlever l’ombre par défaut sur mobile */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  #section_3_accueil .flou_text_accueil:hover {
+    box-shadow: 0 0 30px rgba(131, 77, 255, 0.26); /* légère ombre sur hover */
+  }
+}
+@media screen and (max-width: 768px) {
+  /* page pro */
+  #serrage_main,
+  #section_1_part,
+  #femme_medecin_part {
+    flex-direction: column !important;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  #serrage_main img,
+  #section_1_part img,
+  #femme_medecin_part img {
+    margin-top: 70px;
+    flex: unset;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .texte_p1_pro,
+  .texte {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 50px;
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 30px;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    margin: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  #assu_pro {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    padding: 20px;
+  }
+
+  #assu_pro > div {
+    padding: 50px;
+    height: 250px;
+    background-size: cover; /* pour conserver la taille et éviter la déformation */
+    background-position: center;
+  }
+
+  /* Adaptation mobile pour la section coutainer_bleu_pro , page pro*/
+
+  .coutainer_bleu_pro div {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* espace entre le texte et le bouton */
+  }
+
+  .coutainer_bleu_pro .contact_btn {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
+/* page particulier */
+@media screen and (max-width: 768px) {
+  #card_section_2_part {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact_btn,
+  .btn_devis {
+    width: 90%;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}
+
+/* Section devis / formulaire contact */
+#troisieme_section_part,
+#formualaire_contact {
+  padding: 20px;
+}
+
+#formualaire_contact input,
+#formualaire_contact select,
+#formualaire_contact textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.bouton_contact {
+  padding: 20px;
+  font-size: 1.5rem;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+/* Footer */
+
+/* Footer mobile */
+@media screen and (max-width: 768px) {
+  #coutainer_footer {
+    flex-direction: column; /* vertical sur mobile */
+    text-align: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  #colonne_1,
+  #colonne_2,
+  #colonne_3 {
+    margin: 0;
+  }
+
+  .container,
+  .menu_footer,
+  .submenu_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  #coutainer_footer img {
+    margin: 0 auto 20px auto;
   }
 }
