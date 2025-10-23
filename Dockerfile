@@ -31,8 +31,7 @@ COPY apache-config/000-default.conf /etc/apache2/sites-available/000-default.con
 COPY apache-config/000-default-ssl.conf /etc/apache2/sites-available/000-default-ssl.conf
 
 # Active le site SSL
-# RUN a2ensite 000-default-ssl.conf on va la remettre après
-
+ RUN a2ensite 000-default-ssl.conf 
 # Change le propriétaire des fichiers
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
