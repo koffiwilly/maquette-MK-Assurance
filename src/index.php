@@ -16,6 +16,8 @@ $title = $pageTitles[$pageName] ?? 'MK Assurance';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?= htmlspecialchars($title) ?></title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="./medias/logo_favicon.png" />
+
 </head>
 <body>
 <?php include("./includes/menu.php"); ?>
