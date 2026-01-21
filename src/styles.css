@@ -286,7 +286,15 @@ nav li a:hover {
 #section_2_accueil img {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
   border-radius: 15px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card_decenalle_accueil:hover img,
+.card_vl_accueil:hover img,
+.card_sante_accueil:hover img,
+.card_emprunteur_accueil:hover img {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18), 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 #section_1_accueil h1,
@@ -310,22 +318,45 @@ nav li a:hover {
 #section_2_accueil {
   display: flex;
   justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 60px auto;
+  max-width: 1200px;
 }
 
 #section_2_accueil div {
-  margin: 30px 30px 10px;
-  border-color: #333;
-  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+#section_2_accueil div:hover {
+  transform: translateY(-5px);
+}
+
+#section_2_accueil h3 {
+  color: #47509e;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 .btn_rdv_accueil {
-  margin: 60px;
+  margin: 60px auto;
   display: inline-block;
   background-color: #1607fe;
   color: white;
-  padding: 12px 24px;
-  border-radius: 6px;
+  padding: 14px 32px;
+  border-radius: 8px;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(22, 7, 254, 0.3);
+}
+
+.btn_rdv_accueil:hover {
+  background-color: #0d04d9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(22, 7, 254, 0.4);
 }
 
 #section_3_accueil {
