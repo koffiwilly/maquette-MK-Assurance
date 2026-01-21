@@ -466,7 +466,6 @@ nav li a:hover {
   color: #333;
 }
 
-/* Images avec ombre stylée - pages accueil/pro/particulier */
 #serrage_main img,
 #section_1_part img,
 #femme_medecin_part img {
@@ -496,29 +495,42 @@ h2,
   font-size: 2.2rem;
 }
 
-.layer_blur h2 { text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
+.layer_blur h2 { 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
 .layer_blur {
-  margin-top: 50px;
-  background-color: rgba(80, 70, 229, 0.16);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(300px);
-  border-radius: 12px;
-  padding: 20px;
+  margin: 50px 0;
+  background-color: rgba(80, 70, 229, 0.08);
+  box-shadow: 0 8px 30px rgba(131, 77, 255, 0.20), 0 -8px 30px rgba(131, 77, 255, 0.20);
+  border-radius: 0;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.layer_blur > p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
 #assu_pro {
   display: flex;
   gap: 20px;
   justify-content: center;
-  padding: 40px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
 }
 
 #assu_pro > div {
   flex: 1;
+  min-width: 250px;
   height: 250px;
   background-size: cover;
   background-position: center;
-  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 1.2rem;
   display: flex;
@@ -526,14 +538,33 @@ h2,
   justify-content: center;
   border-radius: 12px;
   text-align: center;
+  transition: transform 0.3s ease;
 }
 
-/* Cartes assurance avec ombre grise */
+#assu_pro > div h3 {
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9),
+               2px 2px 4px rgba(0, 0, 0, 1),
+               -2px -2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#assu_pro > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+#assu_pro > div:hover h3 {
+  text-shadow: 0 0 15px rgba(0, 0, 0, 1),
+               3px 3px 6px rgba(0, 0, 0, 1),
+               -3px -3px 6px rgba(0, 0, 0, 0.9);
+}
+
+/* Cartes assurance avec ombre douce */
 #TNS,
 #PREVOYANCE,
 #EXPATRIE,
 #COLLECTIVE {
-  box-shadow: 10px 15px 5px 3px #7f7f7f;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.1);
   background-size: cover;
 }
 
@@ -557,23 +588,42 @@ h2,
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  padding: 40px;
+  padding: 40px 20px;
 }
 
 #assu_entreprise > div {
   height: 200px;
   background-size: cover;
   background-position: center;
-
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  box-shadow: 10px 15px 5px 3px #7f7f7f;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+
+#assu_entreprise > div h3 {
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9),
+               2px 2px 4px rgba(0, 0, 0, 1),
+               -2px -2px 4px rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
+}
+
+#assu_entreprise > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+#assu_entreprise > div:hover h3 {
+  text-shadow: 0 0 15px rgba(0, 0, 0, 1),
+               3px 3px 6px rgba(0, 0, 0, 1),
+               -3px -3px 6px rgba(0, 0, 0, 0.9);
 }
 
 .VL {
