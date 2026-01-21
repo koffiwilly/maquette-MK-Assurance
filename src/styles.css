@@ -75,15 +75,62 @@ nav li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
+
 .avis {
   display: flex;
-  margin-top: 10vh;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  transition: transform 0.3s ease;
 }
+
+.avis:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.avis img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e0e0e0;
+}
+
 .avis-aside {
-  margin-left: 5vw;
-  justify-content: start;
-  text-align: start;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.avis-aside h3 {
+  color: #47509e;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.stars {
+  margin-bottom: 15px;
+}
+
+.stars img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: none;
+}
+
+.avis-aside p {
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 /* Hover sauf bouton contact */
 nav li a:hover {
@@ -372,11 +419,11 @@ nav li a:hover {
 }
 
 .flou_text_accueil {
-  transition: box-shadow 0.3s ease; /* effet doux au survol */
+  transition: box-shadow 0.3s ease; 
 }
 
 .flou_text_accueil:hover {
-  box-shadow: 0 0 25px rgba(131, 77, 255, 0.26); /* ombre plus large autour de toute la div */
+  box-shadow: 0 0 25px rgba(131, 77, 255, 0.26); 
 }
 
 
