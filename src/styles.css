@@ -382,7 +382,10 @@ nav li a:hover {
   color: #333;
 }
 
-#serrage_main img {
+/* Images avec ombre stylée - pages accueil/pro/particulier */
+#serrage_main img,
+#section_1_part img,
+#femme_medecin_part img {
   flex: 1 1 500px;
   max-width: 100%;
   height: auto;
@@ -435,25 +438,28 @@ h2 {
   text-align: center;
 }
 
-#TNS {
+/* Cartes assurance avec ombre grise */
+#TNS,
+#PREVOYANCE,
+#EXPATRIE,
+#COLLECTIVE {
   box-shadow: 10px 15px 5px 3px #7f7f7f;
-  background-image: url("./medias/sante\ tns.png");
   background-size: cover;
+}
+
+#TNS {
+  background-image: url("./medias/sante\ tns.png");
 }
 
 #PREVOYANCE {
-  box-shadow: 10px 15px 5px 3px #7f7f7f;
   background-image: url("./medias/prevoyance.png");
-  background-size: cover;
 }
+
 #EXPATRIE {
-  box-shadow: 10px 15px 5px 3px #7f7f7f;
   background-image: url("./medias/Expatrié.png");
-  background-size: cover;
 }
 
 #COLLECTIVE {
-  box-shadow: 10px 15px 5px 3px #7f7f7f;
   background-image: url("./medias/collective.png");
 }
 
@@ -549,21 +555,11 @@ h2 {
   margin: 0 auto 60px;
 }
 
-#section_1_part img {
-  flex: 1 1 500px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 15px -20px 40px rgba(80, 70, 229, 0.16),
-    -15px 30px 60px rgba(0, 0, 0, 0.35);
-  object-fit: contain;
-}
+
 
 #section_1_part h1 {
   color: #47509e;
-  margin-bottom: 50px;
   margin-bottom: 20px;
-  color: #47509e;
   font-family: "Roboto", sans-serif;
   font-size: 2.2rem;
 }
@@ -608,21 +604,10 @@ h2 {
   margin-bottom: 20px;
   color: #47509e;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 20px;
-  color: #47509e;
-  font-family: "Roboto", sans-serif;
   font-size: 2.2rem;
 }
 
-#femme_medecin_part img {
-  flex: 1 1 500px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 15px -20px 40px rgba(80, 70, 229, 0.16),
-    -15px 30px 60px rgba(0, 0, 0, 0.35);
-  object-fit: contain;
-}
+
 
 .color_p_part {
   color: #5046e5;
