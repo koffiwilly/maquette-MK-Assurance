@@ -407,23 +407,44 @@ nav li a:hover {
 }
 
 #section_3_accueil {
-  margin: 50px;
+  margin: 80px auto;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
 #section_3_accueil h2 {
-  margin: 40px;
+  margin-bottom: 30px;
+  color: #47509e;
+  font-size: 1.8rem;
 }
 
 #section_3_accueil p {
-  margin-bottom: 80px;
+  line-height: 1.8;
+  color: #555;
+  font-size: 1.1rem;
 }
 
 .flou_text_accueil {
-  transition: box-shadow 0.3s ease; 
+  background-color: #f9f9f9;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .flou_text_accueil:hover {
-  box-shadow: 0 0 25px rgba(131, 77, 255, 0.26); 
+  box-shadow: 0 8px 30px rgba(131, 77, 255, 0.15);
+}
+
+/* Titres de sections */
+.titre_section {
+  text-align: center;
+  color: #47509e;
+  font-size: 2rem;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-weight: 600;
 }
 
 
