@@ -744,7 +744,7 @@ h2,
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* s’adapte à la taille de l’écran */
   gap: 30px; /* espace équilibré entre les cartes */
   max-width: 1200px; /* limite la largeur totale pour recentrer le contenu */
-  padding: 0 20px; /* petit espace sur les côtés pour respirer */
+  padding: 0 20px; 
 }
 
 #card_section_2_part div {
