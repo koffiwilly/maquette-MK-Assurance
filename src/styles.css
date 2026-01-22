@@ -696,6 +696,26 @@ h2,
   box-shadow: 0 6px 20px rgba(22, 7, 254, 0.4);
 }
 
+.btn_devis {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #1607fe;
+  color: white;
+  cursor: pointer;
+}
+
+.btn_devis:hover {
+  background-color: #0d04d9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(22, 7, 254, 0.4);
+}
+
 /* page particulier*/
 #section_1_part {
   display: flex;
@@ -755,6 +775,31 @@ h2,
 
 .color_p_part {
   color: #5046e5;
+}
+
+/* Section CTA page particulier */
+.cta_section_part {
+  background-color: #5046e5;
+  padding: 60px 30px;
+  margin-top: 80px;
+  text-align: center;
+  color: white;
+}
+
+.cta_section_part h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+}
+
+.cta_section_part p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: white;
+  opacity: 0.95;
 }
 
 /* page contact*/
