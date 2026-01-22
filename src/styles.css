@@ -642,44 +642,58 @@ h2,
   background-image: url("./medias/multi\ risque.png");
 }
 
-.coutainer_bleu_pro {
-  color: white;
-  margin-top: 80px;
-  text-align: left;
+/* Section CTA Contact/Devis */
+.cta_section_pro {
   background-color: #5046e5;
-  padding: 20px;
-}
-
-.coutainer_bleu_pro div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.contact_btn {
-  color: black;
+  padding: 60px 30px;
+  margin-top: 80px;
   text-align: center;
-  font-weight: bold;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.section_quatre h2 {
-  margin: 60px 0 50px;
-}
-
-.section_quatre h3 {
-  margin-bottom: 24px;
-}
-
-.btn_devis {
-  display: inline-block;
-  margin-top: 50px;
   color: white;
+}
+
+.cta_content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cta_section_pro h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+}
+
+.cta_section_pro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: white;
+  opacity: 0.95;
+}
+
+.cta_buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_devis_cta {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   background-color: #1607fe;
-  padding: 10px 20px;
-  border-radius: 5px;
+  color: white;
+}
+
+.btn_devis_cta:hover {
+  background-color: #0d04d9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(22, 7, 254, 0.4);
 }
 
 /* page particulier*/
